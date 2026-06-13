@@ -1,0 +1,16 @@
+{
+  "name": "Finish Line Oil Change and Repair",
+  "short_name": "Finish Line",
+  "description": "Your Livonia Oil Change Experts — walk-in oil changes and auto repair.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f1729",
+  "theme_color": "#c41e2a",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
