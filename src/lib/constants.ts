@@ -44,8 +44,8 @@ export const SERVICES = [
       "Fluid Top-Off Included",
     ],
     image:
-      "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=800&q=80",
-    imageAlt: "Technician performing a full-service oil change",
+      "https://images.unsplash.com/photo-1771340742493-52fbd5476ccb?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Technician pouring fresh oil into the engine",
   },
   {
     id: "battery",
@@ -60,8 +60,8 @@ export const SERVICES = [
       "Starter & Alternator Inspection",
     ],
     image:
-      "https://images.unsplash.com/photo-1486263119873-7ea59b246254?auto=format&fit=crop&w=800&q=80",
-    imageAlt: "Mechanic testing a car battery under the hood",
+      "https://images.unsplash.com/photo-1632733711679-529326f6db12?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Car battery visible under the hood",
   },
   {
     id: "brakes",
@@ -76,8 +76,8 @@ export const SERVICES = [
       "Parking Brake Adjustment",
     ],
     image:
-      "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=800&q=80",
-    imageAlt: "Mechanic inspecting brake components on a vehicle",
+      "https://images.unsplash.com/photo-1760317890322-364a810cd4da?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Close-up of a performance brake system",
   },
   {
     id: "engine",
@@ -92,8 +92,8 @@ export const SERVICES = [
       "General Engine Repair",
     ],
     image:
-      "https://images.unsplash.com/photo-1486754730774-325b8931d4a8?auto=format&fit=crop&w=800&q=80",
-    imageAlt: "Mechanic working on a car engine",
+      "https://images.unsplash.com/photo-1768929571671-4e58e2d9e72f?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Detailed view of a car engine compartment",
   },
   {
     id: "filters",
@@ -108,8 +108,8 @@ export const SERVICES = [
       "Filter Inspection with Every Visit",
     ],
     image:
-      "https://images.unsplash.com/photo-1607860108853-7c7d2f8c4a2a?auto=format&fit=crop&w=800&q=80",
-    imageAlt: "Mechanic replacing an engine air filter",
+      "https://images.unsplash.com/photo-1755698636797-8aa43182fb9b?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Engine bay with visible air filter assembly",
   },
   {
     id: "fluids",
@@ -124,8 +124,8 @@ export const SERVICES = [
       "Differential & Transfer Case Fluid",
     ],
     image:
-      "https://images.unsplash.com/photo-1625047509248-ec889cbff817?auto=format&fit=crop&w=800&q=80",
-    imageAlt: "Technician servicing vehicle fluids in a service bay",
+      "https://images.unsplash.com/photo-1625047509248-ec889cbff17f?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Under-hood fluid systems and reservoirs",
   },
   {
     id: "inspections",
@@ -140,8 +140,8 @@ export const SERVICES = [
       "Written Inspection Summary",
     ],
     image:
-      "https://images.unsplash.com/photo-1530046339160-ce66e568c747?auto=format&fit=crop&w=800&q=80",
-    imageAlt: "Mechanic performing a multi-point vehicle inspection",
+      "https://images.unsplash.com/photo-1643700973089-baa86a1ab9ee?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Technician inspecting a vehicle in the service bay",
   },
   {
     id: "suspension",
@@ -156,8 +156,8 @@ export const SERVICES = [
       "Suspension Component Replacement",
     ],
     image:
-      "https://images.unsplash.com/photo-1492144534655-eae7849b90ae?auto=format&fit=crop&w=800&q=80",
-    imageAlt: "Mechanic inspecting vehicle suspension and steering",
+      "https://images.unsplash.com/photo-1761044292083-69da797c814b?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Wheel, caliper, and suspension hardware close-up",
   },
   {
     id: "tires",
@@ -172,8 +172,8 @@ export const SERVICES = [
       "TPMS Sensor Service",
     ],
     image:
-      "https://images.unsplash.com/photo-1578844251756-43c8dbf9febb?auto=format&fit=crop&w=800&q=80",
-    imageAlt: "Technician rotating and inspecting tires",
+      "https://images.unsplash.com/photo-1645445522156-9ac06bc7a767?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Mechanic working on a tire in the garage",
   },
 ] as const;
 
