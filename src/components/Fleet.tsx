@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { BUSINESS, FLEET_FEATURES } from "@/lib/constants";
+import { BUSINESS, FLEET_FEATURES, FLEET_PARTNERS } from "@/lib/constants";
 import { FleetForm } from "@/components/ContactForm";
 
 export function Fleet() {
@@ -33,6 +33,23 @@ export function Fleet() {
                 </li>
               ))}
             </ul>
+
+            <p className="mt-6 text-sm font-semibold text-brand-navy">
+              Fleet Support Customers
+            </p>
+            <div className="mt-3 flex flex-wrap gap-3">
+              {FLEET_PARTNERS.map((partner) => (
+                <a
+                  key={partner.name}
+                  href={partner.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-brand-navy transition hover:border-brand-red hover:text-brand-red"
+                >
+                  {partner.name}
+                </a>
+              ))}
+            </div>
 
             <a
               href={BUSINESS.phoneHref}

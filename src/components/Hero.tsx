@@ -29,10 +29,12 @@ export function Hero() {
             {BUSINESS.tagline}
           </h1>
 
-          <p className="mt-5 text-lg leading-relaxed text-slate-200 sm:text-xl">
-            Fast, honest oil changes and auto repair at{" "}
-            <strong className="font-semibold text-white">{BUSINESS.address.full}</strong>.
-            Family-owned. Locally trusted.
+          <p className="mt-5 text-lg font-semibold leading-relaxed text-white sm:text-xl">
+            {BUSINESS.heroServices}
+          </p>
+
+          <p className="mt-3 text-base leading-relaxed text-slate-200 sm:text-lg">
+            {BUSINESS.heroTrust}
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">

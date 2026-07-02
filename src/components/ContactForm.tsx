@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, FormEvent } from "react";
+import { BUSINESS } from "@/lib/constants";
 
 type FormStatus = "idle" | "loading" | "success" | "error";
 
@@ -23,19 +24,69 @@ export function ContactForm({
 
     const form = e.currentTarget;
     const formData = new FormData(form);
-    const payload = Object.fromEntries(formData.entries());
+    const payload = Object.fromEntries(formData.entries()) as Record<
+      string,
+      string
+    >;
+    const { name, email, phone, message, company, fleetSize } = payload;
+
+    if (!name || !email || !phone || !message) {
+      setStatus("error");
+      setErrorMessage("Please fill in all required fields.");
+      return;
+    }
+
+    if (formType === "fleet" && (!company || !fleetSize)) {
+      setStatus("error");
+      setErrorMessage("Please provide company name and fleet size.");
+      return;
+    }
+
+    const subject =
+      formType === "fleet"
+        ? `Fleet Quote Request from ${company}`
+        : `Website Contact from ${name}`;
+
+    const emailBody = [
+      `Form: ${formType === "fleet" ? "Fleet Quote Request" : "Contact Form"}`,
+      `Name: ${name}`,
+      `Email: ${email}`,
+      `Phone: ${phone}`,
+      formType === "fleet" ? `Company: ${company}` : null,
+      formType === "fleet" ? `Fleet Size: ${fleetSize}` : null,
+      "",
+      "Message:",
+      message,
+    ]
+      .filter(Boolean)
+      .join("\n");
 
     try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...payload, formType }),
-      });
-
-      const data = (await response.json()) as { error?: string };
+      const response = await fetch(
+        `https://formsubmit.co/ajax/${encodeURIComponent(BUSINESS.contactEmail)}`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify({
+            _subject: `[Finish Line Website] ${subject}`,
+            _template: "table",
+            _captcha: "false",
+            form_type: formType,
+            name,
+            email,
+            phone,
+            company: company ?? "",
+            fleet_size: fleetSize ?? "",
+            message: emailBody,
+          }),
+        },
+      );
 
       if (!response.ok) {
-        throw new Error(data.error ?? "Something went wrong. Please call us.");
+        throw new Error("Something went wrong. Please call us.");
       }
 
       setStatus("success");

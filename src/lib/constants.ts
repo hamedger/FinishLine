@@ -1,7 +1,10 @@
 export const BUSINESS = {
   name: "Finish Line Oil Change and Repair",
   shortName: "Finish Line",
-  tagline: "Your Livonia Oil Change Experts",
+  tagline: "Drive With Confidence. Drive With Finish Line.",
+  heroServices:
+    "Fast Oil Changes • Tires • Brakes • Diagnostics • Repairs",
+  heroTrust: "Family Owned. Community Trusted.",
   phone: "(734) 367-6457",
   phoneHref: "tel:+17343676457",
   email: "contact@finishlineoilchange.com",
@@ -34,56 +37,54 @@ export const SERVICES = [
     id: "oil-change",
     title: "Oil Change",
     description:
-      "Keep your engine protected with a full-service oil change. We drain old oil, replace your filter, and top off essential fluids — then walk you through what we checked under the hood.",
+      "Keep your engine protected with a full-service oil change. We drain the old oil, replace your filter, and top off essential fluids — then walk you through everything we checked under the hood for complete peace of mind.",
     items: [
       "Conventional Oil Change",
       "Synthetic Blend Oil Change",
       "Full Synthetic Oil Change",
       "High-Mileage Oil Change",
-      "Oil Filter Replacement",
-      "Fluid Top-Off Included",
+      "Premium Oil Filter Replacement",
+      "Essential Fluid Top-Offs Included",
+      "Courtesy Vehicle Inspection",
     ],
-    image:
-      "https://images.unsplash.com/photo-1771340742493-52fbd5476ccb?auto=format&fit=crop&w=800&q=80",
-    imageAlt: "Technician pouring fresh oil into the engine",
+    closing:
+      "Quality service, trusted products, and expert care to keep your vehicle running at its best.",
   },
   {
     id: "battery",
     title: "Battery",
     description:
-      "A weak battery can leave you stranded — especially in Michigan winters. We test your battery and charging system, clean terminals, and install a quality replacement when you need one.",
+      "Don't get stranded by a weak battery — especially during harsh Michigan winters. We test your battery and charging system, clean battery terminals, and install a high-quality replacement when needed to keep your vehicle starting reliably.",
     items: [
       "Battery Health Test",
-      "Terminal Cleaning & Inspection",
+      "Battery Terminal Cleaning & Inspection",
       "Battery Replacement",
       "Charging System Check",
       "Starter & Alternator Inspection",
     ],
-    image:
-      "https://images.unsplash.com/photo-1632733711679-529326f6db12?auto=format&fit=crop&w=800&q=80",
-    imageAlt: "Car battery visible under the hood",
+    closing:
+      "Stay prepared with dependable battery service and expert diagnostics you can trust.",
   },
   {
     id: "brakes",
     title: "Brakes",
     description:
-      "Your brakes are your most important safety system. From squealing pads to a soft pedal, our technicians inspect, diagnose, and repair brake components so you can stop with confidence.",
+      "Your brakes are your vehicle's most important safety system. From squealing pads to a soft brake pedal, our technicians inspect, diagnose, and repair brake components so you can stop with confidence.",
     items: [
-      "Brake System Inspection",
+      "Complete Brake System Inspection",
       "Brake Pad Replacement",
-      "Rotor Resurfacing & Replacement",
+      "Rotor Replacement",
       "Brake Fluid Exchange",
       "Parking Brake Adjustment",
     ],
-    image:
-      "https://images.unsplash.com/photo-1760317890322-364a810cd4da?auto=format&fit=crop&w=800&q=80",
-    imageAlt: "Close-up of a performance brake system",
+    closing:
+      "Reliable brake service helps ensure your vehicle performs safely when it matters most. Trust our experienced technicians to keep your braking system in top condition.",
   },
   {
     id: "engine",
     title: "Engine",
     description:
-      "When your check engine light comes on or performance drops, you need answers fast. We diagnose engine issues and handle routine maintenance to keep your motor running strong mile after mile.",
+      "When your check engine light comes on or performance drops, you need answers fast. Our technicians diagnose engine issues and perform essential maintenance to keep your vehicle running strong mile after mile.",
     items: [
       "Check Engine Light Diagnostics",
       "Belts & Hoses Inspection",
@@ -91,15 +92,14 @@ export const SERVICES = [
       "Engine Air Intake Service",
       "General Engine Repair",
     ],
-    image:
-      "https://images.unsplash.com/photo-1768929571671-4e58e2d9e72f?auto=format&fit=crop&w=800&q=80",
-    imageAlt: "Detailed view of a car engine compartment",
+    closing:
+      "From routine maintenance to engine troubleshooting, we provide reliable service to help maximize performance, efficiency, and the life of your vehicle.",
   },
   {
     id: "filters",
     title: "Filters",
     description:
-      "Clean filters protect your engine and the air you breathe inside your car. We inspect and replace clogged filters to improve performance, fuel economy, and cabin air quality.",
+      "Clean filters protect both your engine and the air you breathe inside your vehicle. We inspect and replace dirty or clogged filters to help improve engine performance, fuel efficiency, and cabin air quality.",
     items: [
       "Engine Air Filter Replacement",
       "Cabin Air Filter Replacement",
@@ -107,47 +107,44 @@ export const SERVICES = [
       "Fuel Filter Service",
       "Filter Inspection with Every Visit",
     ],
-    image:
-      "https://images.unsplash.com/photo-1755698636797-8aa43182fb9b?auto=format&fit=crop&w=800&q=80",
-    imageAlt: "Engine bay with visible air filter assembly",
+    closing:
+      "Regular filter maintenance helps your vehicle run more efficiently while keeping the air inside your car clean and comfortable.",
   },
   {
     id: "fluids",
     title: "Fluids",
     description:
-      "Fluids are the lifeblood of your vehicle. We check levels and condition of every major fluid system and perform exchanges when they're due — helping prevent costly breakdowns down the road.",
+      "Fluids are the lifeblood of your vehicle. We inspect the condition and level of every major fluid system and perform recommended services to help prevent costly repairs and keep your vehicle running smoothly.",
     items: [
       "Transmission Fluid Service",
       "Coolant / Antifreeze Exchange",
-      "Power Steering Fluid",
+      "Power Steering Fluid Service",
       "Brake Fluid Service",
-      "Differential & Transfer Case Fluid",
+      "Differential & Transfer Case Fluid Service",
     ],
-    image:
-      "https://images.unsplash.com/photo-1625047509248-ec889cbff17f?auto=format&fit=crop&w=800&q=80",
-    imageAlt: "Under-hood fluid systems and reservoirs",
+    closing:
+      "Routine fluid maintenance helps extend the life of your vehicle and ensures critical systems continue to perform at their best.",
   },
   {
     id: "inspections",
     title: "Inspections",
     description:
-      "Catch small problems before they become big repairs. Our multi-point inspection covers the essentials — from tires and brakes to fluids and belts — so you always know the condition of your vehicle.",
+      "Catch small problems before they turn into costly repairs. Our comprehensive multi-point inspection covers the essentials — from tires and brakes to fluids and belts — so you always know the condition of your vehicle.",
     items: [
       "Multi-Point Vehicle Inspection",
       "Pre-Trip Safety Check",
       "Seasonal Readiness Inspection",
-      "Under-Hood & Under-Car Review",
+      "Under-Hood & Under-Car Inspection",
       "Written Inspection Summary",
     ],
-    image:
-      "https://images.unsplash.com/photo-1643700973089-baa86a1ab9ee?auto=format&fit=crop&w=800&q=80",
-    imageAlt: "Technician inspecting a vehicle in the service bay",
+    closing:
+      "Our thorough inspections help identify potential issues early, giving you peace of mind and helping keep your vehicle safe and reliable.",
   },
   {
     id: "suspension",
     title: "Suspension",
     description:
-      "Worn shocks, struts, or steering components affect handling, tire wear, and ride comfort. We inspect your suspension system and recommend repairs to keep your drive smooth and controlled.",
+      "Worn shocks, struts, or steering components can affect handling, tire wear, and overall ride comfort. Our technicians inspect your suspension system and recommend the necessary repairs to keep your vehicle riding smoothly and safely.",
     items: [
       "Shock & Strut Inspection",
       "Steering System Check",
@@ -155,15 +152,14 @@ export const SERVICES = [
       "Alignment Check & Referral",
       "Suspension Component Replacement",
     ],
-    image:
-      "https://images.unsplash.com/photo-1761044292083-69da797c814b?auto=format&fit=crop&w=800&q=80",
-    imageAlt: "Wheel, caliper, and suspension hardware close-up",
+    closing:
+      "A properly maintained suspension system improves vehicle control, extends tire life, and provides a smoother, more comfortable driving experience.",
   },
   {
     id: "tires",
     title: "Tires",
     description:
-      "Proper tire care improves safety, handling, and fuel efficiency. We rotate, balance, and inspect your tires at every visit — and help you get back on the road quickly if you have a flat.",
+      "Proper tire care improves safety, handling, and fuel efficiency. We rotate, balance, and inspect your tires to help extend their life — and get you back on the road quickly if you experience a flat.",
     items: [
       "Tire Rotation",
       "Tire Pressure Check & Adjust",
@@ -171,9 +167,23 @@ export const SERVICES = [
       "Tire Balancing",
       "TPMS Sensor Service",
     ],
-    image:
-      "https://images.unsplash.com/photo-1645445522156-9ac06bc7a767?auto=format&fit=crop&w=800&q=80",
-    imageAlt: "Mechanic working on a tire in the garage",
+    closing:
+      "Regular tire maintenance helps improve traction, ride comfort, and overall driving safety in all road conditions.",
+  },
+  {
+    id: "visibility",
+    title: "Visibility & Lighting",
+    description:
+      "Clear visibility is critical for safe driving in every season. From your windshield to your wiper system and headlights, we inspect and service the essential components that help you see the road clearly and drive with confidence.",
+    items: [
+      "Windshield Repair & Replacement",
+      "Wiper Blade Replacement",
+      "Wiper System Inspection",
+      "Headlight Bulb Replacement",
+      "Full Visibility & Lighting Inspection",
+    ],
+    closing:
+      "Reliable visibility systems are especially important in rain, snow, nighttime driving, and harsh Michigan weather conditions. Stay safe with properly maintained vision and lighting systems all year round.",
   },
 ] as const;
 
@@ -268,10 +278,21 @@ export const FLEET_FEATURES = [
   "Maintenance records for your fleet",
 ] as const;
 
+export const FLEET_PARTNERS = [
+  {
+    name: "Wheels",
+    href: "https://www.google.com/search?q=Wheels+fleet+management",
+  },
+  {
+    name: "Holman",
+    href: "https://www.google.com/search?q=Holman+fleet+management",
+  },
+] as const;
+
 export const NAV_LINKS = [
   { href: "#services", label: "Services" },
   { href: "#coupons", label: "Coupons" },
-  { href: "#fleet", label: "Fleet Management" },
+  { href: "#fleet", label: "Fleet" },
   { href: "#tips", label: "Tips" },
   { href: "#contact", label: "Contact" },
 ] as const;

@@ -17,12 +17,12 @@ export function Footer() {
                 src="/logo.png"
                 alt={`${BUSINESS.name} logo`}
                 width={1024}
-                height={682}
+                height={645}
                 className="h-14 w-auto sm:h-16"
               />
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-slate-600">
-              {BUSINESS.tagline}. Family-owned auto care serving Livonia and
+              {BUSINESS.heroTrust} Family-owned auto care serving Livonia and
               surrounding communities.
             </p>
           </div>
