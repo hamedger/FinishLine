@@ -26,8 +26,12 @@ export function Hero() {
           </span>
 
           <h1 className="text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
-            {BUSINESS.tagline}
+            {BUSINESS.seoH1}
           </h1>
+
+          <p className="mt-4 text-xl font-semibold leading-relaxed text-white/95 sm:text-2xl">
+            {BUSINESS.tagline}
+          </p>
 
           <p className="mt-5 text-lg font-semibold leading-relaxed text-white sm:text-xl">
             {BUSINESS.heroServices}

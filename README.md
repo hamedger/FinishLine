@@ -42,10 +42,10 @@ npm run build
 npm start
 ```
 
-Point `finishlineoilchange.com` to your deployment.
+Point `finishlineoil.com` to your deployment.
 
 ## Business Info
 
 - **Address:** 11900 Middlebelt Rd, Livonia, MI 48150
 - **Phone:** (734) 367-6457
-- **Email:** contact@finishlineoilchange.com
+- **Email:** contact@finishlineoil.com

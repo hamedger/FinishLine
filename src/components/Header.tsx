@@ -28,7 +28,7 @@ export function Header() {
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
         <Link href="/" className="flex shrink-0 items-center">
           <Image
-            src="/logo.png"
+            src={BUSINESS.logoSrc}
             alt={`${BUSINESS.name} logo`}
             width={1024}
             height={645}

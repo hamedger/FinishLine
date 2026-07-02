@@ -74,6 +74,14 @@ export function Contact() {
               >
                 Get Directions
               </a>
+              <a
+                href={BUSINESS.googleReviewUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-xl border border-white/20 px-6 py-3 font-bold text-white transition hover:bg-white/10"
+              >
+                Review on Google
+              </a>
             </div>
           </div>
 

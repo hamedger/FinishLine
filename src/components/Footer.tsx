@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { BUSINESS, NAV_LINKS } from "@/lib/constants";
+import { BUSINESS, FOOTER_LINKS } from "@/lib/constants";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -14,7 +14,7 @@ export function Footer() {
           <div className="sm:col-span-2 lg:col-span-1">
             <Link href="/" className="inline-block">
               <Image
-                src="/logo.png"
+                src={BUSINESS.logoSrc}
                 alt={`${BUSINESS.name} logo`}
                 width={1024}
                 height={645}
@@ -32,16 +32,36 @@ export function Footer() {
               Quick Links
             </h3>
             <ul className="mt-4 space-y-2">
-              {NAV_LINKS.map((link) => (
+              {FOOTER_LINKS.map((link) => (
                 <li key={link.href}>
-                  <a
+                  <Link
                     href={link.href}
                     className="text-sm text-slate-600 transition hover:text-brand-red"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
+              <li>
+                <a
+                  href={BUSINESS.googlePlaceUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-slate-600 transition hover:text-brand-red"
+                >
+                  Find Us on Google
+                </a>
+              </li>
+              <li>
+                <a
+                  href={BUSINESS.googleReviewUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-slate-600 transition hover:text-brand-red"
+                >
+                  Leave a Google Review
+                </a>
+              </li>
             </ul>
           </div>
 

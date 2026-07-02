@@ -1,13 +1,16 @@
+export const SITE_URL = "https://finishlineoil.com" as const;
+
 export const BUSINESS = {
   name: "Finish Line Oil Change and Repair",
   shortName: "Finish Line",
   tagline: "Drive With Confidence. Drive With Finish Line.",
+  seoH1: "Oil Change in Livonia, MI",
   heroServices:
     "Fast Oil Changes • Tires • Brakes • Diagnostics • Repairs",
   heroTrust: "Family Owned. Community Trusted.",
   phone: "(734) 367-6457",
   phoneHref: "tel:+17343676457",
-  email: "contact@finishlineoilchange.com",
+  email: "contact@finishlineoil.com",
   contactEmail: "Hassandia82@hotmail.com",
   address: {
     street: "11900 Middlebelt Rd",
@@ -16,6 +19,13 @@ export const BUSINESS = {
     zip: "48150",
     full: "11900 Middlebelt Rd, Livonia, MI 48150",
   },
+  websiteUrl: SITE_URL,
+  logoFullUrl: `${SITE_URL}/logo.png`,
+  googlePlaceUrl:
+    "https://www.google.com/maps/search/?api=1&query=Finish+Line+Oil+Change+and+Repair+11900+Middlebelt+Rd+Livonia+MI+48150",
+  // Replace with your GBP short review link from business.google.com when available
+  googleReviewUrl:
+    "https://www.google.com/maps/search/?api=1&query=Finish+Line+Oil+Change+and+Repair+11900+Middlebelt+Rd+Livonia+MI+48150",
   mapsUrl:
     "https://www.google.com/maps/dir/?api=1&destination=11900+Middlebelt+Rd,+Livonia,+MI+48150",
   mapsEmbed:
@@ -30,6 +40,7 @@ export const BUSINESS = {
     { day: "Sunday", hours: "CLOSED" },
   ],
   walkInNote: "No appointment needed — walk in anytime during business hours.",
+  logoSrc: "/logo.png?v=2",
 } as const;
 
 export const SERVICES = [
@@ -289,10 +300,61 @@ export const FLEET_PARTNERS = [
   },
 ] as const;
 
+export const AREA_SERVED = [
+  "Livonia",
+  "Westland",
+  "Redford",
+  "Farmington Hills",
+  "Canton",
+  "Wayne County",
+] as const;
+
+export const OIL_CHANGE_FAQS = [
+  {
+    question: "Do I need an appointment for an oil change in Livonia?",
+    answer:
+      "No appointment is needed. Finish Line is a walk-in oil change shop — just drive to 11900 Middlebelt Rd during business hours and we'll take care of you.",
+  },
+  {
+    question: "How long does an oil change take?",
+    answer:
+      "Most oil changes are completed in about 30 minutes or less. Wait times may vary on busy days, but we work efficiently to get you back on the road quickly.",
+  },
+  {
+    question: "What types of oil do you offer?",
+    answer:
+      "We offer conventional, synthetic blend, full synthetic, and high-mileage oil changes. Every service includes a new oil filter, fluid top-offs, and a courtesy vehicle inspection.",
+  },
+  {
+    question: "How often should I change my oil?",
+    answer:
+      "Most vehicles need an oil change every 3,000–5,000 miles with conventional oil, or 5,000–7,500 miles with full synthetic. Check your owner's manual — our technicians can recommend the right interval for your vehicle.",
+  },
+  {
+    question: "Is synthetic oil worth it in Michigan?",
+    answer:
+      "Synthetic oil performs better in extreme hot and cold temperatures, which makes it a strong choice for Michigan winters and summers. It also lasts longer between changes. We'll help you choose the right oil for your vehicle and driving habits.",
+  },
+  {
+    question: "Do you serve areas outside Livonia?",
+    answer:
+      "Yes. We serve Livonia, Westland, Redford, Farmington Hills, Canton, and surrounding Wayne County communities. Many customers drive in from nearby cities for fast, trusted walk-in service.",
+  },
+] as const;
+
 export const NAV_LINKS = [
   { href: "#services", label: "Services" },
   { href: "#coupons", label: "Coupons" },
   { href: "#fleet", label: "Fleet" },
   { href: "#tips", label: "Tips" },
   { href: "#contact", label: "Contact" },
+] as const;
+
+export const FOOTER_LINKS = [
+  { href: "/oil-change-livonia-mi", label: "Oil Change Livonia" },
+  { href: "/#services", label: "Services" },
+  { href: "/#coupons", label: "Coupons" },
+  { href: "/#fleet", label: "Fleet" },
+  { href: "/#tips", label: "Tips" },
+  { href: "/#contact", label: "Contact" },
 ] as const;

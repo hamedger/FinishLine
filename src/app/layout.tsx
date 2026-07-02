@@ -4,7 +4,7 @@ import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { StickyCallButton } from "@/components/StickyCallButton";
-import { BUSINESS } from "@/lib/constants";
+import { BUSINESS, SITE_URL } from "@/lib/constants";
 import { LocalBusinessSchema } from "@/components/LocalBusinessSchema";
 
 const inter = Inter({
@@ -13,7 +13,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://finishlineoilchange.com"),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: `${BUSINESS.name} | Oil Change & Auto Repair in Livonia, MI`,
     template: `%s | ${BUSINESS.shortName}`,
@@ -32,17 +32,25 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
   manifest: "/manifest.json",
   icons: {
-    icon: "/logo.png",
-    apple: "/logo.png",
+    icon: `${BUSINESS.logoSrc}`,
+    apple: `${BUSINESS.logoSrc}`,
   },
   openGraph: {
-    title: `${BUSINESS.name} — ${BUSINESS.tagline}`,
+    title: `${BUSINESS.name} | Oil Change in Livonia, MI`,
     description:
       "Fast, trusted oil changes and auto repair in Livonia, MI. Walk in today — no appointment needed.",
     type: "website",
     locale: "en_US",
     siteName: BUSINESS.name,
-    images: [{ url: "/logo.png", alt: BUSINESS.name }],
+    url: SITE_URL,
+    images: [{ url: BUSINESS.logoSrc, alt: BUSINESS.name }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${BUSINESS.name} | Oil Change in Livonia, MI`,
+    description:
+      "Fast walk-in oil changes and auto repair in Livonia, MI. No appointment needed.",
+    images: [BUSINESS.logoSrc],
   },
 };
 

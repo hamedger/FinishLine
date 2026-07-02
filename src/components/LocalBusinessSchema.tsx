@@ -1,14 +1,17 @@
-import { BUSINESS } from "@/lib/constants";
+import { AREA_SERVED, BUSINESS, SITE_URL } from "@/lib/constants";
 
 export function LocalBusinessSchema() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "AutoRepair",
     name: BUSINESS.name,
-    description: `${BUSINESS.tagline}. Walk-in oil changes, tire service, brakes, and auto repair in Livonia, Michigan.`,
-    url: "https://finishlineoilchange.com",
+    description: `${BUSINESS.tagline} Walk-in oil changes, tire service, brakes, and auto repair in Livonia, Michigan.`,
+    url: SITE_URL,
+    image: BUSINESS.logoFullUrl,
     telephone: BUSINESS.phone,
     email: BUSINESS.email,
+    hasMap: BUSINESS.googlePlaceUrl,
+    sameAs: [BUSINESS.googlePlaceUrl],
     address: {
       "@type": "PostalAddress",
       streetAddress: BUSINESS.address.street,
@@ -37,14 +40,16 @@ export function LocalBusinessSchema() {
       },
     ],
     priceRange: "$$",
-    areaServed: [
-      "Livonia",
-      "Westland",
-      "Redford",
-      "Farmington Hills",
-      "Canton",
-      "Wayne County",
-    ],
+    areaServed: AREA_SERVED,
+    makesOffer: {
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: "Oil Change",
+        description:
+          "Full-service walk-in oil changes including conventional, synthetic blend, full synthetic, and high-mileage options.",
+      },
+    },
   };
 
   return (

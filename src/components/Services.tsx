@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { SERVICES } from "@/lib/constants";
 import { SERVICE_ICONS } from "@/components/ServiceIcons";
 
@@ -72,6 +73,15 @@ export function Services() {
                 <p className="mt-5 border-t border-slate-100 pt-4 text-sm font-medium leading-relaxed text-slate-500">
                   {service.closing}
                 </p>
+
+                {service.id === "oil-change" && (
+                  <Link
+                    href="/oil-change-livonia-mi"
+                    className="mt-4 inline-flex text-sm font-bold text-brand-red transition hover:text-brand-red-dark"
+                  >
+                    Learn more about oil changes in Livonia →
+                  </Link>
+                )}
               </article>
             );
           })}
