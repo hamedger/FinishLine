@@ -41,8 +41,8 @@ export function Fleet() {
               <Image
                 src={FLEET_PARTNERS_IMAGE}
                 alt="Fleet management partners: Enterprise, Holman, Element, Wheels, EMKAY, Voyager, Merchants Fleet, Fleet Response, and Mike Albert"
-                width={658}
-                height={835}
+                width={686}
+                height={1107}
                 className="mx-auto h-auto w-full max-w-sm"
               />
             </div>
