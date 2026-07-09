@@ -11,7 +11,11 @@ export function LocalBusinessSchema() {
     telephone: BUSINESS.phone,
     email: BUSINESS.email,
     hasMap: BUSINESS.googlePlaceUrl,
-    sameAs: [BUSINESS.googlePlaceUrl],
+    sameAs: [
+      BUSINESS.googlePlaceUrl,
+      BUSINESS.social.facebook,
+      BUSINESS.social.instagram,
+    ],
     address: {
       "@type": "PostalAddress",
       streetAddress: BUSINESS.address.street,
