@@ -74,7 +74,7 @@ export function Fleet() {
           <div className="space-y-6">
             <div className="relative aspect-[16/10] overflow-hidden rounded-2xl shadow-xl">
               <Image
-                src="https://images.unsplash.com/photo-1601362840469-51e4d8d52736?auto=format&fit=crop&w=800&q=80"
+                src="https://images.unsplash.com/photo-1687274390959-9206c6393174?auto=format&fit=crop&w=800&q=80"
                 alt="Commercial fleet vehicles ready for maintenance"
                 fill
                 className="object-cover"

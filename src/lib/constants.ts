@@ -10,7 +10,7 @@ export const BUSINESS = {
   heroTrust: "Family Owned. Community Trusted.",
   phone: "(734) 367-6457",
   phoneHref: "tel:+17343676457",
-  email: "contact@finishlineoil.com",
+  email: "finishlinequicklube@gmail.com",
   contactEmail: "Hassandia82@hotmail.com",
   address: {
     street: "11900 Middlebelt Rd",
