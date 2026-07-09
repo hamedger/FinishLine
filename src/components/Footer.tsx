@@ -25,6 +25,26 @@ export function Footer() {
               {BUSINESS.heroTrust} Family-owned auto care serving Livonia and
               surrounding communities.
             </p>
+            <div className="mt-4 flex items-center gap-3">
+              <a
+                href={BUSINESS.social.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow us on Instagram"
+                className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 text-slate-500 transition hover:border-brand-red hover:text-brand-red"
+              >
+                <InstagramIcon className="h-4 w-4" />
+              </a>
+              <a
+                href={BUSINESS.social.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow us on Facebook"
+                className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 text-slate-500 transition hover:border-brand-red hover:text-brand-red"
+              >
+                <FacebookIcon className="h-4 w-4" />
+              </a>
+            </div>
           </div>
 
           <div>
@@ -112,5 +132,23 @@ export function Footer() {
         </div>
       </div>
     </footer>
+  );
+}
+
+function InstagramIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+      <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+      <path strokeLinecap="round" d="M17.5 6.5h.01" />
+    </svg>
+  );
+}
+
+function FacebookIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+    </svg>
   );
 }

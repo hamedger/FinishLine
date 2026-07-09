@@ -40,7 +40,12 @@ export const BUSINESS = {
     { day: "Sunday", hours: "CLOSED" },
   ],
   walkInNote: "No appointment needed — walk in anytime during business hours.",
-  logoSrc: "/logo.png?v=2",
+  logoSrc: "/logo.png?v=3",
+  social: {
+    instagram:
+      "https://www.instagram.com/finishlineoilchangeautorepair?utm_source=qr",
+    facebook: "https://www.facebook.com/share/18tQe2xiWA/?mibextid=wwXIfr",
+  },
 } as const;
 
 export const SERVICES = [
@@ -200,11 +205,18 @@ export const SERVICES = [
 
 export const COUPONS = [
   {
-    id: "conventional",
+    id: "any-oil-change",
     amount: "$10 OFF",
-    title: "Conventional Oil Change",
-    description: "Save on our full-service conventional oil change.",
-    code: "FLCONV10",
+    title: "Any Oil Change",
+    description: "Save on any full-service oil change.",
+    code: "FLOIL10",
+  },
+  {
+    id: "brakes-suspension-repair",
+    amount: "$25 OFF",
+    title: "Brakes, Suspension & Auto Repair",
+    description: "Save $25 for every $250 spent on brakes, suspension, or any auto repair.",
+    code: "FLREPAIR25",
   },
 ] as const;
 
@@ -291,14 +303,44 @@ export const FLEET_FEATURES = [
 
 export const FLEET_PARTNERS = [
   {
-    name: "Wheels",
-    href: "https://www.google.com/search?q=Wheels+fleet+management",
+    name: "Enterprise",
+    href: "https://www.google.com/search?q=Enterprise+fleet+management",
   },
   {
     name: "Holman",
     href: "https://www.google.com/search?q=Holman+fleet+management",
   },
+  {
+    name: "Element",
+    href: "https://www.google.com/search?q=Element+fleet+management",
+  },
+  {
+    name: "Wheels",
+    href: "https://www.google.com/search?q=Wheels+fleet+management",
+  },
+  {
+    name: "EMKAY",
+    href: "https://www.google.com/search?q=EMKAY+fleet+management",
+  },
+  {
+    name: "Voyager",
+    href: "https://www.google.com/search?q=Voyager+fleet+management",
+  },
+  {
+    name: "Merchants Fleet",
+    href: "https://www.google.com/search?q=Merchants+Fleet+management",
+  },
+  {
+    name: "Fleet Response",
+    href: "https://www.google.com/search?q=Fleet+Response+management",
+  },
+  {
+    name: "Mike Albert",
+    href: "https://www.google.com/search?q=Mike+Albert+fleet+management",
+  },
 ] as const;
+
+export const FLEET_PARTNERS_IMAGE = "/fleet-partners.png";
 
 export const AREA_SERVED = [
   "Livonia",

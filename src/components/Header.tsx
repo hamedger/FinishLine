@@ -64,7 +64,8 @@ export function Header() {
                     <p className="px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-slate-400">
                       Fleet Support
                     </p>
-                    {FLEET_PARTNERS.map((partner) => (
+                    <div className="max-h-64 overflow-y-auto">
+                      {FLEET_PARTNERS.map((partner) => (
                       <a
                         key={partner.name}
                         href={partner.href}
@@ -76,6 +77,7 @@ export function Header() {
                         {partner.name}
                       </a>
                     ))}
+                    </div>
                   </div>
                 )}
               </div>

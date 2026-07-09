@@ -1,6 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
 import { SERVICES } from "@/lib/constants";
-import { SERVICE_ICONS } from "@/components/ServiceIcons";
 
 export function Services() {
   return (
@@ -21,8 +21,6 @@ export function Services() {
 
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {SERVICES.map((service) => {
-            const Icon = SERVICE_ICONS[service.id];
-
             return (
               <article
                 key={service.id}
@@ -30,8 +28,14 @@ export function Services() {
                 className="group flex flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-brand-red/30 hover:shadow-lg"
               >
                 <div className="flex items-start gap-4">
-                  <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-brand-red/10 text-brand-red ring-4 ring-brand-red/5 transition group-hover:bg-brand-red group-hover:text-white group-hover:ring-brand-red/20">
-                    <Icon className="h-8 w-8" />
+                  <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-full ring-4 ring-brand-red/5 transition group-hover:ring-brand-red/20">
+                    <Image
+                      src={`/services/${service.id}.jpeg`}
+                      alt={`${service.title} service icon`}
+                      fill
+                      sizes="64px"
+                      className="object-cover"
+                    />
                   </div>
                   <div className="min-w-0 pt-1">
                     <h3 className="text-xl font-extrabold tracking-tight text-brand-navy">

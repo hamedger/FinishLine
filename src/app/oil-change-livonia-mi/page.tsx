@@ -13,7 +13,7 @@ import { FaqSchema } from "@/components/FaqSchema";
 import { OilChangeServiceSchema } from "@/components/ServiceSchema";
 
 const oilChangeService = SERVICES.find((service) => service.id === "oil-change")!;
-const oilChangeCoupon = COUPONS.find((coupon) => coupon.id === "conventional");
+const oilChangeCoupon = COUPONS.find((coupon) => coupon.id === "any-oil-change");
 const oilChangeTestimonials = TESTIMONIALS.filter((testimonial) =>
   testimonial.text.toLowerCase().includes("oil"),
 );

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { BUSINESS, FLEET_FEATURES, FLEET_PARTNERS } from "@/lib/constants";
+import { BUSINESS, FLEET_FEATURES, FLEET_PARTNERS, FLEET_PARTNERS_IMAGE } from "@/lib/constants";
 import { FleetForm } from "@/components/ContactForm";
 
 export function Fleet() {
@@ -37,14 +37,23 @@ export function Fleet() {
             <p className="mt-6 text-sm font-semibold text-brand-navy">
               Fleet Support Customers
             </p>
-            <div className="mt-3 flex flex-wrap gap-3">
+            <div className="mt-3 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+              <Image
+                src={FLEET_PARTNERS_IMAGE}
+                alt="Fleet management partners: Enterprise, Holman, Element, Wheels, EMKAY, Voyager, Merchants Fleet, Fleet Response, and Mike Albert"
+                width={658}
+                height={835}
+                className="mx-auto h-auto w-full max-w-sm"
+              />
+            </div>
+            <div className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-3">
               {FLEET_PARTNERS.map((partner) => (
                 <a
                   key={partner.name}
                   href={partner.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-brand-navy transition hover:border-brand-red hover:text-brand-red"
+                  className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-3 py-2 text-center text-xs font-semibold text-brand-navy transition hover:border-brand-red hover:text-brand-red sm:text-sm"
                 >
                   {partner.name}
                 </a>
