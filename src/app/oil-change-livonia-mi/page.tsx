@@ -14,9 +14,7 @@ import { OilChangeServiceSchema } from "@/components/ServiceSchema";
 
 const oilChangeService = SERVICES.find((service) => service.id === "oil-change")!;
 const oilChangeCoupon = COUPONS.find((coupon) => coupon.id === "any-oil-change");
-const oilChangeTestimonials = TESTIMONIALS.filter((testimonial) =>
-  testimonial.text.toLowerCase().includes("oil"),
-);
+const oilChangeTestimonials = TESTIMONIALS.slice(0, 4);
 
 export const metadata: Metadata = {
   title: "Oil Change in Livonia, MI — Walk-In Welcome",
