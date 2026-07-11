@@ -206,16 +206,35 @@ export const SERVICES = [
 export const COUPONS = [
   {
     id: "any-oil-change",
-    amount: "$10 OFF",
-    title: "Any Oil Change",
-    description: "Save on any full-service oil change.",
-    code: "FLOIL10",
+    amount: "$5 OFF",
+    title: "Any Full-Service Oil Change",
+    description: "Save $5 on any full-service oil change.",
+    includes: [
+      "Conventional",
+      "Synthetic Blend",
+      "High Mileage",
+      "Full Synthetic",
+      "Mobil 1 Full Synthetic",
+    ],
+    terms:
+      "Valid on one full-service oil change. Taxes, shop fees, oil filter upgrades, additional quarts, and specialty oils may incur additional charges. Cannot be combined with any other offer. One coupon per visit. See store for details.",
+    code: "FLOIL5",
   },
   {
     id: "brakes-suspension-repair",
     amount: "$25 OFF",
     title: "Brakes, Suspension & Auto Repair",
-    description: "Save $25 for every $250 spent on brakes, suspension, or any auto repair.",
+    description:
+      "Save $25 on any brake, suspension, or auto repair service of $350 or more.",
+    includes: [
+      "Brake Repairs",
+      "Suspension Repairs",
+      "Steering Repairs",
+      "Engine Repairs",
+      "General Auto Repairs",
+    ],
+    terms:
+      "Valid on repairs totaling $350 or more before tax and shop fees. Cannot be combined with any other offer. One coupon per visit. See store for details.",
     code: "FLREPAIR25",
   },
 ] as const;

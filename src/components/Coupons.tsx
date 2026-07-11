@@ -84,6 +84,32 @@ function CouponCard({
           </div>
         </div>
 
+        <div className="mt-4">
+          <p className="text-xs font-bold uppercase tracking-widest text-slate-500">
+            Offer Includes
+          </p>
+          <ul className="mt-2 grid grid-cols-1 gap-x-4 gap-y-1 sm:grid-cols-2">
+            {coupon.includes.map((item) => (
+              <li
+                key={item}
+                className="flex items-start gap-2 text-sm text-slate-700"
+              >
+                <svg
+                  className="mt-0.5 h-4 w-4 shrink-0 text-brand-red"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2.5}
+                  aria-hidden="true"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+
         <div className="mt-6">
           {!revealed ? (
             <button
@@ -110,6 +136,11 @@ function CouponCard({
             </div>
           )}
         </div>
+
+        <p className="mt-4 text-xs leading-relaxed text-slate-500">
+          <span className="font-semibold text-slate-600">Limited-Time Offer.</span>{" "}
+          {coupon.terms}
+        </p>
       </div>
     </article>
   );
