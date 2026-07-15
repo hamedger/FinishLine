@@ -4,7 +4,7 @@ export const BUSINESS = {
   name: "Finish Line Oil Change and Repair",
   shortName: "Finish Line",
   tagline: "Drive With Confidence. Drive With Finish Line.",
-  seoH1: "Oil Change in Livonia, MI",
+  seoH1: "Oil Change & Auto Repair in Livonia, MI",
   heroServices:
     "Fast Oil Changes • Tires • Brakes • Diagnostics • Repairs",
   heroTrust: "Family Owned. Community Trusted.",
@@ -439,6 +439,62 @@ export const OIL_CHANGE_FAQS = [
   },
 ] as const;
 
+export const BRAKE_REPAIR_FAQS = [
+  {
+    question: "How do I know if I need brake repair?",
+    answer:
+      "Common warning signs include squealing or grinding noises, a soft or spongy brake pedal, the vehicle pulling to one side while braking, vibration when stopping, or a brake warning light on your dashboard. If you notice any of these, it's worth having your brakes inspected.",
+  },
+  {
+    question: "Do I need an appointment for brake repair in Livonia?",
+    answer:
+      "No appointment is needed. Finish Line is a walk-in shop — drive to 11900 Middlebelt Rd, Suite A during business hours and our technicians will inspect and diagnose your brakes.",
+  },
+  {
+    question: "How often should brake pads be replaced?",
+    answer:
+      "Brake pad life varies widely with driving habits and conditions, typically somewhere between 25,000 and 70,000 miles. Our technicians can measure your remaining pad thickness during an inspection and let you know where you stand.",
+  },
+  {
+    question: "What brake services do you offer?",
+    answer:
+      "We handle complete brake system inspections, brake pad replacement, rotor replacement, brake fluid exchange, and parking brake adjustment.",
+  },
+  {
+    question: "Do you serve areas outside Livonia for brake repair?",
+    answer:
+      "Yes. We serve Livonia, Westland, Redford, Farmington Hills, Canton, and surrounding Wayne County communities.",
+  },
+] as const;
+
+export const TIRE_SERVICE_FAQS = [
+  {
+    question: "What tire services do you offer in Livonia?",
+    answer:
+      "We offer tire rotation, tire pressure checks and adjustments, flat tire repair, tire balancing, and TPMS sensor service.",
+  },
+  {
+    question: "Do I need an appointment for tire service?",
+    answer:
+      "No appointment is needed. Finish Line is a walk-in shop — drive to 11900 Middlebelt Rd, Suite A during business hours for tire service.",
+  },
+  {
+    question: "How often should tires be rotated?",
+    answer:
+      "Most vehicles benefit from a tire rotation every 5,000–7,500 miles. Pairing it with your regular oil change is an easy way to stay on schedule.",
+  },
+  {
+    question: "Can you repair a flat tire the same day?",
+    answer:
+      "In most cases, yes. Walk in and our technicians will assess the puncture — if it's in a repairable location and within industry safety guidelines, we can typically take care of it same day.",
+  },
+  {
+    question: "Do you serve areas outside Livonia for tire service?",
+    answer:
+      "Yes. We serve Livonia, Westland, Redford, Farmington Hills, Canton, and surrounding Wayne County communities.",
+  },
+] as const;
+
 export const NAV_LINKS = [
   { href: "#services", label: "Services" },
   { href: "#coupons", label: "Coupons" },
@@ -449,6 +505,8 @@ export const NAV_LINKS = [
 
 export const FOOTER_LINKS = [
   { href: "/oil-change-livonia-mi", label: "Oil Change Livonia" },
+  { href: "/brake-repair-livonia-mi", label: "Brake Repair Livonia" },
+  { href: "/tire-service-livonia-mi", label: "Tire Service Livonia" },
   { href: "/#services", label: "Services" },
   { href: "/#coupons", label: "Coupons" },
   { href: "/#fleet", label: "Fleet" },

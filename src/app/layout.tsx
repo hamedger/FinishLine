@@ -15,7 +15,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${BUSINESS.name} | Oil Change & Auto Repair in Livonia, MI`,
+    default: `${BUSINESS.shortName} | Oil Change, Brakes & Auto Repair in Livonia, MI`,
     template: `%s | ${BUSINESS.shortName}`,
   },
   description:
@@ -24,6 +24,8 @@ export const metadata: Metadata = {
     "oil change Livonia MI",
     "oil change near me",
     "auto repair Livonia",
+    "brake repair Livonia",
+    "tire service Livonia",
     "synthetic oil change Livonia",
     "Middlebelt Rd oil change",
     "Finish Line Oil Change",

@@ -86,6 +86,22 @@ export function Services() {
                     Learn more about oil changes in Livonia →
                   </Link>
                 )}
+                {service.id === "brakes" && (
+                  <Link
+                    href="/brake-repair-livonia-mi"
+                    className="mt-4 inline-flex text-sm font-bold text-brand-red transition hover:text-brand-red-dark"
+                  >
+                    Learn more about brake repair in Livonia →
+                  </Link>
+                )}
+                {service.id === "tires" && (
+                  <Link
+                    href="/tire-service-livonia-mi"
+                    className="mt-4 inline-flex text-sm font-bold text-brand-red transition hover:text-brand-red-dark"
+                  >
+                    Learn more about tire service in Livonia →
+                  </Link>
+                )}
               </article>
             );
           })}
