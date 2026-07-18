@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { BUSINESS } from "@/lib/constants";
 import { ContactForm } from "@/components/ContactForm";
 
@@ -86,7 +87,17 @@ export function Contact() {
           </div>
 
           <div>
-            <div className="overflow-hidden rounded-2xl shadow-xl">
+            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl">
+              <Image
+                src="/shop/shop-storefront-signage.jpg"
+                alt="Finish Line Oil Change and Repair storefront signage in Livonia, MI"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+            </div>
+
+            <div className="mt-6 overflow-hidden rounded-2xl shadow-xl">
               <iframe
                 title="Finish Line Oil Change and Repair location map"
                 src={BUSINESS.mapsEmbed}

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import {
   AREA_SERVED,
@@ -98,6 +99,20 @@ export default function BrakeRepairLivoniaPage() {
                 Review on Google
               </a>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-10">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl sm:aspect-[16/9]">
+            <Image
+              src="/shop/shop-brake-rotor.jpg"
+              alt="Finish Line technician inspecting a brake rotor and caliper in Livonia, MI"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 768px"
+            />
           </div>
         </div>
       </section>

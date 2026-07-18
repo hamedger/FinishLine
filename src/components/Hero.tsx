@@ -6,8 +6,8 @@ export function Hero() {
     <section className="relative overflow-hidden bg-brand-navy">
       <div className="absolute inset-0">
         <Image
-          src="https://images.unsplash.com/photo-1717068341695-9d33ffb66968?auto=format&fit=crop&w=1920&q=80"
-          alt="Engine compartment of a car with the hood open at an oil change shop"
+          src="/shop/shop-hero-bay-wide.jpg"
+          alt="Inside the Finish Line Oil Change and Repair service bays in Livonia, MI"
           fill
           className="object-cover object-right opacity-50 sm:opacity-55 lg:object-[center_25%]"
           priority

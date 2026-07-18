@@ -7,7 +7,12 @@ export function LocalBusinessSchema() {
     name: BUSINESS.name,
     description: `${BUSINESS.tagline} Walk-in oil changes, tire service, brakes, and auto repair in Livonia, Michigan.`,
     url: SITE_URL,
-    image: BUSINESS.logoFullUrl,
+    image: [
+      BUSINESS.logoFullUrl,
+      `${SITE_URL}/shop/shop-storefront-signage.jpg`,
+      `${SITE_URL}/shop/shop-storefront-oilchange.jpg`,
+      `${SITE_URL}/shop/shop-hero-bay-wide.jpg`,
+    ],
     telephone: BUSINESS.phone,
     email: BUSINESS.email,
     hasMap: BUSINESS.googlePlaceUrl,

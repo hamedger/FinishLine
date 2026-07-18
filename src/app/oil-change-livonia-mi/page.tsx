@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import {
   AREA_SERVED,
@@ -96,6 +97,20 @@ export default function OilChangeLivoniaPage() {
                 Review on Google
               </a>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-10">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <div className="relative aspect-[16/9] overflow-hidden rounded-2xl shadow-xl">
+            <Image
+              src="/shop/shop-storefront-oilchange.jpg"
+              alt="Finish Line Oil Change and Repair storefront on Middlebelt Road in Livonia, MI"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 1024px"
+            />
           </div>
         </div>
       </section>
