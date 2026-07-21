@@ -31,11 +31,25 @@ export function ShopGallery() {
             Our Shop on Middlebelt Road
           </h2>
           <p className="mt-4 text-lg text-slate-600">
-            Real photos from our Livonia location — come see us in person.
+            Watch a quick video tour and see real photos from our Livonia
+            location — come see us in person.
           </p>
         </div>
 
-        <div className="mt-12 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
+        <div className="mx-auto mt-10 max-w-xs overflow-hidden rounded-2xl shadow-md">
+          <video
+            src="/shop/shop-tour.mp4"
+            poster="/shop/shop-hero-bay-wide.jpg"
+            controls
+            playsInline
+            preload="metadata"
+            className="aspect-[9/16] w-full bg-black object-cover"
+          >
+            Your browser does not support embedded video.
+          </video>
+        </div>
+
+        <div className="mt-10 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
           {GALLERY_PHOTOS.map((photo) => (
             <div
               key={photo.src}
