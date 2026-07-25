@@ -78,3 +78,14 @@ export function TireServiceSchema() {
     />
   );
 }
+
+export function AutoRepairServiceSchema() {
+  return (
+    <LocalServiceSchema
+      name="Auto Repair in Livonia, MI"
+      description="Walk-in auto repair service in Livonia, Michigan. Check engine light diagnostics, suspension repair, belts and hoses, fluid service, filters, and general engine repair."
+      serviceType="Auto Repair"
+      path="/auto-repair-livonia-mi"
+    />
+  );
+}

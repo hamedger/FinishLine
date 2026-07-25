@@ -495,6 +495,34 @@ export const TIRE_SERVICE_FAQS = [
   },
 ] as const;
 
+export const AUTO_REPAIR_FAQS = [
+  {
+    question: "What auto repair services do you offer in Livonia?",
+    answer:
+      "We handle check engine light diagnostics, suspension repair, belts and hoses, fluid services, filter replacement, multi-point inspections, and general engine repair — beyond our oil change, brake, and tire service.",
+  },
+  {
+    question: "Do I need an appointment for auto repair?",
+    answer:
+      "No appointment is needed. Finish Line is a walk-in shop — drive to 11900 Middlebelt Rd, Suite A during business hours and our technicians will diagnose the issue.",
+  },
+  {
+    question: "My check engine light is on — can you tell me why?",
+    answer:
+      "Yes. We run a check engine light diagnostic to identify the cause and walk you through what we find before doing any repair work.",
+  },
+  {
+    question: "Do you work on suspension and steering issues?",
+    answer:
+      "Yes. We inspect and repair shocks, struts, and steering components, and can address unusual noises, pulling, or a rough ride.",
+  },
+  {
+    question: "Do you serve areas outside Livonia for auto repair?",
+    answer:
+      "Yes. We serve Livonia, Westland, Redford, Farmington Hills, Canton, and surrounding Wayne County communities.",
+  },
+] as const;
+
 export const NAV_LINKS = [
   { href: "#services", label: "Services" },
   { href: "#coupons", label: "Coupons" },
@@ -507,6 +535,7 @@ export const FOOTER_LINKS = [
   { href: "/oil-change-livonia-mi", label: "Oil Change Livonia" },
   { href: "/brake-repair-livonia-mi", label: "Brake Repair Livonia" },
   { href: "/tire-service-livonia-mi", label: "Tire Service Livonia" },
+  { href: "/auto-repair-livonia-mi", label: "Auto Repair Livonia" },
   { href: "/#services", label: "Services" },
   { href: "/#coupons", label: "Coupons" },
   { href: "/#fleet", label: "Fleet" },
