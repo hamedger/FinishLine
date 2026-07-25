@@ -1,11 +1,16 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { SERVICES } from "@/lib/constants";
 
 export function Services() {
+  const [openId, setOpenId] = useState<string | null>(null);
+
   return (
     <section id="services" className="bg-slate-50 py-20 sm:py-24">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-bold uppercase tracking-widest text-brand-red">
             Our Services
@@ -19,98 +24,122 @@ export function Services() {
           </p>
         </div>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 space-y-3">
           {SERVICES.map((service) => {
+            const isOpen = openId === service.id;
+
             return (
-              <article
+              <div
                 key={service.id}
                 id={service.id}
-                className="group flex flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-brand-red/30 hover:shadow-lg"
+                className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:border-brand-red/30"
               >
-                <div className="flex items-start gap-4">
-                  <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-full ring-4 ring-brand-red/5 transition group-hover:ring-brand-red/20">
+                <button
+                  type="button"
+                  onClick={() => setOpenId(isOpen ? null : service.id)}
+                  aria-expanded={isOpen}
+                  className="flex w-full items-center gap-4 p-4 text-left sm:p-5"
+                >
+                  <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full ring-2 ring-brand-red/10 sm:h-14 sm:w-14">
                     <Image
                       src={`/services/${service.id}.jpeg`}
-                      alt={`${service.title} service icon`}
+                      alt=""
                       fill
-                      sizes="64px"
+                      sizes="56px"
                       className="object-cover"
                     />
                   </div>
-                  <div className="min-w-0 pt-1">
-                    <h3 className="text-xl font-extrabold tracking-tight text-brand-navy">
+                  <div className="min-w-0 flex-1">
+                    <h3 className="text-base font-extrabold tracking-tight text-brand-navy sm:text-lg">
                       {service.title}
                     </h3>
+                    <p className="text-xs text-slate-500">
+                      {service.items.length} services
+                    </p>
                   </div>
-                </div>
+                  <ChevronIcon
+                    className={`h-5 w-5 shrink-0 text-slate-400 transition-transform duration-200 ${
+                      isOpen ? "rotate-180 text-brand-red" : ""
+                    }`}
+                  />
+                </button>
 
-                <p className="mt-4 text-sm leading-relaxed text-slate-600">
-                  {service.description}
-                </p>
+                {isOpen && (
+                  <div className="border-t border-slate-100 px-4 pb-5 pt-4 sm:px-5">
+                    <p className="text-sm leading-relaxed text-slate-600">
+                      {service.description}
+                    </p>
 
-                <div className="mt-5 flex-1 border-t border-slate-100 pt-5">
-                  <p className="text-xs font-bold uppercase tracking-widest text-brand-red">
-                    Services Include
-                  </p>
-                  <ul className="mt-3 space-y-2">
-                    {service.items.map((item) => (
-                      <li
-                        key={item}
-                        className="flex items-start gap-2 text-sm text-slate-700"
-                      >
-                        <svg
-                          className="mt-0.5 h-4 w-4 shrink-0 text-brand-red"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          strokeWidth={2.5}
-                          aria-hidden="true"
+                    <p className="mt-4 text-xs font-bold uppercase tracking-widest text-brand-red">
+                      Services Include
+                    </p>
+                    <ul className="mt-2 space-y-1.5">
+                      {service.items.map((item) => (
+                        <li
+                          key={item}
+                          className="flex items-start gap-2 text-sm text-slate-700"
                         >
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                        </svg>
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                          <CheckIcon className="mt-0.5 h-4 w-4 shrink-0 text-brand-red" />
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
 
-                <p className="mt-5 border-t border-slate-100 pt-4 text-sm font-medium leading-relaxed text-slate-500">
-                  {service.closing}
-                </p>
+                    <p className="mt-4 text-xs leading-relaxed text-slate-500">
+                      {service.closing}
+                    </p>
 
-                {service.id === "oil-change" && (
-                  <Link
-                    href="/oil-change-livonia-mi"
-                    className="mt-4 inline-flex text-sm font-bold text-brand-red transition hover:text-brand-red-dark"
-                  >
-                    Learn more about oil changes in Livonia →
-                  </Link>
+                    {service.id === "oil-change" && (
+                      <Link
+                        href="/oil-change-livonia-mi"
+                        className="mt-4 inline-flex text-sm font-bold text-brand-red transition hover:text-brand-red-dark"
+                      >
+                        Learn more about oil changes in Livonia →
+                      </Link>
+                    )}
+                    {service.id === "brakes" && (
+                      <Link
+                        href="/brake-repair-livonia-mi"
+                        className="mt-4 inline-flex text-sm font-bold text-brand-red transition hover:text-brand-red-dark"
+                      >
+                        Learn more about brake repair in Livonia →
+                      </Link>
+                    )}
+                    {service.id === "tires" && (
+                      <Link
+                        href="/tire-service-livonia-mi"
+                        className="mt-4 inline-flex text-sm font-bold text-brand-red transition hover:text-brand-red-dark"
+                      >
+                        Learn more about tire service in Livonia →
+                      </Link>
+                    )}
+                  </div>
                 )}
-                {service.id === "brakes" && (
-                  <Link
-                    href="/brake-repair-livonia-mi"
-                    className="mt-4 inline-flex text-sm font-bold text-brand-red transition hover:text-brand-red-dark"
-                  >
-                    Learn more about brake repair in Livonia →
-                  </Link>
-                )}
-                {service.id === "tires" && (
-                  <Link
-                    href="/tire-service-livonia-mi"
-                    className="mt-4 inline-flex text-sm font-bold text-brand-red transition hover:text-brand-red-dark"
-                  >
-                    Learn more about tire service in Livonia →
-                  </Link>
-                )}
-              </article>
+              </div>
             );
           })}
         </div>
 
-        <p className="mt-12 text-center text-sm text-slate-500">
+        <p className="mt-10 text-center text-sm text-slate-500">
           Pricing varies by vehicle. Call us for a quote — no hidden fees, no pressure.
         </p>
       </div>
     </section>
+  );
+}
+
+function ChevronIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+    </svg>
+  );
+}
+
+function CheckIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+    </svg>
   );
 }

@@ -3,7 +3,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { PromoBar } from "@/components/PromoBar";
 import { StickyCallButton } from "@/components/StickyCallButton";
 import { BUSINESS, SITE_URL } from "@/lib/constants";
 import { LocalBusinessSchema } from "@/components/LocalBusinessSchema";
@@ -66,7 +65,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} antialiased`}>
         <LocalBusinessSchema />
-        <PromoBar />
         <Header />
         <main>{children}</main>
         <Footer />
