@@ -152,6 +152,21 @@ export default function OilChangeLivoniaPage() {
         </div>
       </section>
 
+      <section className="bg-white py-10">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <div className="overflow-hidden rounded-2xl shadow-xl">
+            <Image
+              src="/best-oil-brands.jpg"
+              alt="Finish Line only uses premium oil brands: GM Dexos1 Approved, Ford Motorcraft, Lucas Oil Products, and Mobil 1 — for better protection, peak performance, and longer engine life"
+              width={1536}
+              height={1024}
+              className="h-auto w-full"
+              sizes="(max-width: 1024px) 100vw, 1024px"
+            />
+          </div>
+        </div>
+      </section>
+
       <section className="bg-slate-50 py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
