@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Hero } from "@/components/Hero";
 import { CouponsStrip } from "@/components/CouponsStrip";
 import { Services } from "@/components/Services";
@@ -24,6 +25,22 @@ export default function Home() {
     <>
       <CouponsStrip />
       <Hero />
+
+      <section className="bg-white py-10">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <div className="overflow-hidden rounded-2xl shadow-xl">
+            <Image
+              src="/ase-certified-technicians.jpg"
+              alt="Finish Line employs ASE Certified technicians — professional service you can trust, with certified professionals, quality repairs, honest service, and all makes and models serviced"
+              width={1536}
+              height={1024}
+              className="h-auto w-full"
+              sizes="(max-width: 1024px) 100vw, 1024px"
+            />
+          </div>
+        </div>
+      </section>
+
       <Services />
       <Coupons />
       <Testimonials />
