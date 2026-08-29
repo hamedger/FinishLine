@@ -21,13 +21,14 @@ export const BUSINESS = {
   },
   websiteUrl: SITE_URL,
   logoFullUrl: `${SITE_URL}/logo.png`,
+  // Verified Google Business Profile Place ID (confirmed via Birdeye listing lookup)
+  googlePlaceId: "ChIJJxt7SKG0JIgRJ1wonbHqoyI",
   googlePlaceUrl:
-    "https://www.google.com/maps/search/?api=1&query=FINISH+LINE+OIL+CHANGE+%26+AUTO+REPAIR%2C+11900+Middlebelt+Rd+A%2C+Livonia%2C+MI+48150",
-  // Replace with your GBP short review link from business.google.com when available
+    "https://www.google.com/maps/search/?api=1&query=FINISH+LINE+OIL+CHANGE+%26+AUTO+REPAIR%2C+11900+Middlebelt+Rd+A%2C+Livonia%2C+MI+48150&query_place_id=ChIJJxt7SKG0JIgRJ1wonbHqoyI",
   googleReviewUrl:
-    "https://www.google.com/maps/search/?api=1&query=FINISH+LINE+OIL+CHANGE+%26+AUTO+REPAIR%2C+11900+Middlebelt+Rd+A%2C+Livonia%2C+MI+48150",
+    "https://search.google.com/local/writereview?placeid=ChIJJxt7SKG0JIgRJ1wonbHqoyI",
   mapsUrl:
-    "https://www.google.com/maps/dir/?api=1&destination=FINISH+LINE+OIL+CHANGE+%26+AUTO+REPAIR%2C+11900+Middlebelt+Rd+A%2C+Livonia%2C+MI+48150",
+    "https://www.google.com/maps/dir/?api=1&destination=FINISH+LINE+OIL+CHANGE+%26+AUTO+REPAIR%2C+11900+Middlebelt+Rd+A%2C+Livonia%2C+MI+48150&destination_place_id=ChIJJxt7SKG0JIgRJ1wonbHqoyI",
   mapsEmbed:
     "https://maps.google.com/maps?q=FINISH+LINE+OIL+CHANGE+%26+AUTO+REPAIR%2C+11900+Middlebelt+Rd+A%2C+Livonia%2C+MI+48150&output=embed",
   hours: [
