@@ -63,6 +63,17 @@ export function Hero() {
               </svg>
               Get Directions
             </a>
+            <a
+              href={BUSINESS.googleReviewUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 rounded-xl border-2 border-white/30 bg-white/10 px-8 py-4 text-lg font-bold text-white backdrop-blur-sm transition hover:bg-white/20"
+            >
+              <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+              </svg>
+              Review on Google
+            </a>
           </div>
 
           <div className="mt-10 grid grid-cols-3 gap-4 border-t border-white/10 pt-8">
