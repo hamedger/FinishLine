@@ -27,7 +27,7 @@ export default function Home() {
       <Hero />
 
       <section className="bg-white py-10">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto grid max-w-6xl gap-6 px-4 sm:grid-cols-2 sm:px-6 lg:px-8">
           <div className="overflow-hidden rounded-2xl shadow-xl">
             <Image
               src="/ase-certified-technicians.jpg"
@@ -35,7 +35,17 @@ export default function Home() {
               width={1536}
               height={1024}
               className="h-auto w-full"
-              sizes="(max-width: 1024px) 100vw, 1024px"
+              sizes="(max-width: 640px) 100vw, 50vw"
+            />
+          </div>
+          <div className="overflow-hidden rounded-2xl shadow-xl">
+            <Image
+              src="/best-oil-brands.jpg"
+              alt="Finish Line only uses premium oil brands: GM Dexos1 Approved, Ford Motorcraft, Lucas Oil Products, and Mobil 1 — for better protection, peak performance, and longer engine life"
+              width={1536}
+              height={1024}
+              className="h-auto w-full"
+              sizes="(max-width: 640px) 100vw, 50vw"
             />
           </div>
         </div>
