@@ -1,45 +1,27 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import { COUPONS } from "@/lib/constants";
-import {
-  formatCouponExpiryShort,
-  getCouponExpiryDate,
-  getMonthYearLabel,
-} from "@/lib/coupon-utils";
 
 export function Coupons() {
-  const expiryDate = useMemo(() => getCouponExpiryDate(), []);
-  const monthLabel = useMemo(() => getMonthYearLabel(), []);
-  const expiryShort = useMemo(
-    () => formatCouponExpiryShort(expiryDate),
-    [expiryDate],
-  );
-
   return (
     <section id="coupons" className="bg-white py-20 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-bold uppercase tracking-widest text-brand-red">
-            Monthly Specials
+            Limited-Time Offers
           </p>
           <h2 className="mt-2 text-3xl font-extrabold tracking-tight text-brand-navy sm:text-4xl">
             Service Coupons
           </h2>
           <p className="mt-4 text-lg text-slate-600">
-            Show these coupons on your phone at checkout. Valid through{" "}
-            <strong className="text-brand-navy">{expiryShort}</strong>.
+            Show these coupons on your phone at checkout.
           </p>
         </div>
 
         <div className="mt-12 grid gap-8 md:grid-cols-2">
           {COUPONS.map((coupon) => (
-            <CouponCard
-              key={coupon.id}
-              coupon={coupon}
-              expiryShort={expiryShort}
-              monthLabel={monthLabel}
-            />
+            <CouponCard key={coupon.id} coupon={coupon} />
           ))}
         </div>
 
@@ -52,15 +34,7 @@ export function Coupons() {
   );
 }
 
-function CouponCard({
-  coupon,
-  expiryShort,
-  monthLabel,
-}: {
-  coupon: (typeof COUPONS)[number];
-  expiryShort: string;
-  monthLabel: string;
-}) {
+function CouponCard({ coupon }: { coupon: (typeof COUPONS)[number] }) {
   const [revealed, setRevealed] = useState(false);
 
   return (
@@ -71,7 +45,7 @@ function CouponCard({
         <div className="flex items-start justify-between gap-4">
           <div>
             <p className="text-xs font-bold uppercase tracking-widest text-slate-500">
-              {monthLabel} Offer
+              Limited-Time Offer
             </p>
             <p className="mt-1 text-4xl font-black text-brand-red">{coupon.amount}</p>
             <h3 className="mt-2 text-xl font-bold text-brand-navy">{coupon.title}</h3>
@@ -128,7 +102,7 @@ function CouponCard({
                 {coupon.code}
               </p>
               <p className="mt-3 text-sm font-semibold text-brand-red">
-                Expires {expiryShort}
+                Limited-Time Offer
               </p>
               <p className="mt-1 text-xs text-slate-500">
                 Finish Line Oil Change &amp; Repair · Livonia, MI
