@@ -19,11 +19,16 @@ function StarRating({ rating }: { rating: number }) {
 
 function TestimonialCard({
   testimonial,
+  hidden = false,
 }: {
   testimonial: (typeof TESTIMONIALS)[number];
+  hidden?: boolean;
 }) {
   return (
-    <figure className="mx-3 w-[320px] shrink-0 rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm sm:w-[380px]">
+    <figure
+      aria-hidden={hidden || undefined}
+      className="mx-3 w-[320px] shrink-0 rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm sm:w-[380px]"
+    >
       <StarRating rating={testimonial.rating} />
       <blockquote className="mt-4 text-sm leading-relaxed text-slate-200 sm:text-base">
         &ldquo;{testimonial.text}&rdquo;
@@ -42,8 +47,6 @@ function TestimonialCard({
 }
 
 export function Testimonials() {
-  const doubled = [...TESTIMONIALS, ...TESTIMONIALS];
-
   return (
     <section className="overflow-hidden bg-brand-navy py-16 sm:py-20" aria-label="Customer testimonials">
       <div className="checker-bg mb-8 h-1.5 w-full opacity-80" aria-hidden="true" />
@@ -61,11 +64,21 @@ export function Testimonials() {
         <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-brand-navy to-transparent sm:w-32" />
         <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-brand-navy to-transparent sm:w-32" />
 
+        {/* Rendered twice so the marquee loops seamlessly (translateX(-50%)). The
+            second copy is hidden from assistive tech and text extraction so the
+            same reviews don't read as duplicate content. */}
         <div className="flex animate-marquee">
-          {doubled.map((testimonial, index) => (
+          {TESTIMONIALS.map((testimonial) => (
             <TestimonialCard
-              key={`${testimonial.name}-${index}`}
+              key={testimonial.name}
               testimonial={testimonial}
+            />
+          ))}
+          {TESTIMONIALS.map((testimonial) => (
+            <TestimonialCard
+              key={`${testimonial.name}-repeat`}
+              testimonial={testimonial}
+              hidden
             />
           ))}
         </div>

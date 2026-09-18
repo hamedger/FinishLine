@@ -38,13 +38,13 @@ export function ShopGallery() {
 
         <div className="mx-auto mt-10 max-w-xs overflow-hidden rounded-2xl shadow-md">
           <video
-            src="/shop/shop-tour.mp4"
             poster="/shop/shop-hero-bay-wide.jpg"
             controls
             playsInline
             preload="metadata"
             className="aspect-[9/16] w-full bg-black object-cover"
           >
+            <source src="/shop/shop-tour.mp4" type="video/mp4" />
             Your browser does not support embedded video.
           </video>
         </div>
