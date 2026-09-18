@@ -30,8 +30,8 @@ export function Header() {
           <Image
             src={BUSINESS.logoSrc}
             alt={`${BUSINESS.name} logo`}
-            width={1024}
-            height={645}
+            width={1119}
+            height={348}
             className="h-12 w-auto sm:h-16 md:h-20"
             priority
           />

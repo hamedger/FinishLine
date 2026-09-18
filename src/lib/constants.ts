@@ -41,7 +41,7 @@ export const BUSINESS = {
     { day: "Sunday", hours: "CLOSED" },
   ],
   walkInNote: "No appointment needed — walk in anytime during business hours.",
-  logoSrc: "/logo.png?v=3",
+  logoSrc: "/logo.png?v=4",
   social: {
     instagram:
       "https://www.instagram.com/finishlineoilchangeautorepair?utm_source=qr",
