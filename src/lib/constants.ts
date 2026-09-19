@@ -31,6 +31,9 @@ export const BUSINESS = {
     "https://www.google.com/maps/dir/?api=1&destination=FINISH+LINE+OIL+CHANGE+%26+AUTO+REPAIR%2C+11900+Middlebelt+Rd+A%2C+Livonia%2C+MI+48150&destination_place_id=ChIJJxt7SKG0JIgRJ1wonbHqoyI",
   mapsEmbed:
     "https://maps.google.com/maps?q=FINISH+LINE+OIL+CHANGE+%26+AUTO+REPAIR%2C+11900+Middlebelt+Rd+A%2C+Livonia%2C+MI+48150&output=embed",
+  // Google Business Profile aggregate rating — update periodically as reviews grow
+  googleRating: 4.4,
+  googleReviewCount: 400,
   hours: [
     { day: "Monday", hours: "8:00 AM – 6:00 PM" },
     { day: "Tuesday", hours: "8:00 AM – 6:00 PM" },

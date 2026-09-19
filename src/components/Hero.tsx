@@ -80,7 +80,7 @@ export function Hero() {
             {[
               { value: "Walk-In", label: "No appointment" },
               { value: "Local", label: "Family owned" },
-              { value: "Trusted", label: "Livonia, MI" },
+              { value: `${BUSINESS.googleRating}★`, label: `${BUSINESS.googleReviewCount}+ Google Reviews` },
             ].map((stat) => (
               <div key={stat.label}>
                 <p className="text-xl font-bold text-white sm:text-2xl">{stat.value}</p>
