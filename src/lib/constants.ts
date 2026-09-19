@@ -313,6 +313,30 @@ export const TESTIMONIALS = [
     text: "Went in today for the first time to get my oil changed. Apparently Wednesdays are ladies day so I got $5 off :) It was super quick, and the guys were really nice. Will be going here from now on!",
     rating: 5,
   },
+  {
+    name: "Shamya Mason",
+    location: "Google Review",
+    text: "I had a great experience. Alex was very knowledgeable and knew what he was doing. I will definitely be returning!",
+    rating: 5,
+  },
+  {
+    name: "Deb on the Web",
+    location: "Google Review",
+    text: "Efficient and nice staff. Mentions but don't try to pressure you for additional services. Would definitely come back!",
+    rating: 5,
+  },
+  {
+    name: "Makenna Goldman",
+    location: "Google Review",
+    text: "I love getting my oil changed here, everyone is so nice and so helpful with my car!",
+    rating: 5,
+  },
+  {
+    name: "Brenda Allen",
+    location: "Google Local Guide",
+    text: "These gentlemen are incredibly experienced and knowledgeable about what my car needs to stay running well. They make helpful service recommendations without ever being pushy, and even put together a maintenance schedule to help my car last as long as possible. Very highly recommend!",
+    rating: 5,
+  },
 ] as const;
 
 export const TIPS = [
