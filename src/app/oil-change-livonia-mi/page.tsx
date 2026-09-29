@@ -105,7 +105,7 @@ export default function OilChangeLivoniaPage() {
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <div className="relative aspect-[16/9] overflow-hidden rounded-2xl shadow-xl">
             <Image
-              src="/shop/shop-storefront-oilchange.jpg"
+              src="/shop/shop-storefront-oilchange.webp"
               alt="Finish Line Oil Change and Repair storefront on Middlebelt Road in Livonia, MI"
               fill
               className="object-cover"
@@ -156,7 +156,7 @@ export default function OilChangeLivoniaPage() {
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <div className="overflow-hidden rounded-2xl shadow-xl">
             <Image
-              src="/best-oil-brands.jpg"
+              src="/best-oil-brands.webp"
               alt="Finish Line only uses premium oil brands: GM Dexos1 Approved, Ford Motorcraft, Lucas Oil Products, and Mobil 1 — for better protection, peak performance, and longer engine life"
               width={1536}
               height={1024}

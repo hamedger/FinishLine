@@ -9,9 +9,9 @@ export function LocalBusinessSchema() {
     url: SITE_URL,
     image: [
       BUSINESS.logoFullUrl,
-      `${SITE_URL}/shop/shop-storefront-signage.jpg`,
-      `${SITE_URL}/shop/shop-storefront-oilchange.jpg`,
-      `${SITE_URL}/shop/shop-hero-bay-wide.jpg`,
+      `${SITE_URL}/shop/shop-storefront-signage.webp`,
+      `${SITE_URL}/shop/shop-storefront-oilchange.webp`,
+      `${SITE_URL}/shop/shop-hero-bay-wide.webp`,
     ],
     telephone: BUSINESS.phone,
     email: BUSINESS.email,

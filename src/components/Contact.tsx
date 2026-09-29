@@ -89,7 +89,7 @@ export function Contact() {
           <div>
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl">
               <Image
-                src="/shop/shop-storefront-signage.jpg"
+                src="/shop/shop-storefront-signage.webp"
                 alt="Finish Line Oil Change and Repair storefront signage in Livonia, MI"
                 fill
                 className="object-cover"

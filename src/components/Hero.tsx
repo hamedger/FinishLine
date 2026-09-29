@@ -6,7 +6,7 @@ export function Hero() {
     <section className="relative overflow-hidden bg-brand-navy">
       <div className="absolute inset-0">
         <Image
-          src="/shop/shop-hero-bay-wide.jpg"
+          src="/shop/shop-hero-bay-wide.webp"
           alt="Inside the Finish Line Oil Change and Repair service bays in Livonia, MI"
           fill
           className="object-cover object-right opacity-50 sm:opacity-55 lg:object-[center_25%]"

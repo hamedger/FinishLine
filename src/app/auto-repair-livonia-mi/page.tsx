@@ -117,7 +117,7 @@ export default function AutoRepairLivoniaPage() {
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl sm:aspect-[16/9]">
             <Image
-              src="/shop/shop-mechanic-underhood.jpg"
+              src="/shop/shop-mechanic-underhood.webp"
               alt="Finish Line technician diagnosing and repairing a vehicle engine in Livonia, MI"
               fill
               className="object-cover"

@@ -42,7 +42,7 @@ export function Services() {
                 >
                   <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full ring-2 ring-brand-red/10 sm:h-14 sm:w-14">
                     <Image
-                      src={`/services/${service.id}.jpeg`}
+                      src={`/services/${service.id}.webp`}
                       alt=""
                       fill
                       sizes="56px"

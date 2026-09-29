@@ -2,19 +2,19 @@ import Image from "next/image";
 
 const GALLERY_PHOTOS = [
   {
-    src: "/shop/shop-storefront-wide.jpg",
+    src: "/shop/shop-storefront-wide.webp",
     alt: "Finish Line Oil Change and Repair storefront exterior in Livonia, MI",
   },
   {
-    src: "/shop/shop-mechanic-underhood.jpg",
+    src: "/shop/shop-mechanic-underhood.webp",
     alt: "Finish Line technician working under the hood of a vehicle",
   },
   {
-    src: "/shop/shop-bay-interior.jpg",
+    src: "/shop/shop-bay-interior.webp",
     alt: "Inside a Finish Line service bay with a vehicle up on the lift",
   },
   {
-    src: "/shop/shop-tire-stacks.jpg",
+    src: "/shop/shop-tire-stacks.webp",
     alt: "Tires stacked and ready for service at Finish Line in Livonia, MI",
   },
 ] as const;
@@ -38,7 +38,7 @@ export function ShopGallery() {
 
         <div className="mx-auto mt-10 max-w-xs overflow-hidden rounded-2xl shadow-md">
           <video
-            poster="/shop/shop-hero-bay-wide.jpg"
+            poster="/shop/shop-hero-bay-wide.webp"
             controls
             playsInline
             preload="metadata"

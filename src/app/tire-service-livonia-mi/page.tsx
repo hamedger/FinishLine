@@ -104,7 +104,7 @@ export default function TireServiceLivoniaPage() {
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl sm:aspect-[16/9]">
             <Image
-              src="/shop/shop-tire-balancing.jpg"
+              src="/shop/shop-tire-balancing.webp"
               alt="Finish Line technician balancing a tire on a computer wheel balancer in Livonia, MI"
               fill
               className="object-cover"

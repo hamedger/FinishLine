@@ -107,7 +107,7 @@ export default function BrakeRepairLivoniaPage() {
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl sm:aspect-[16/9]">
             <Image
-              src="/shop/shop-brake-rotor.jpg"
+              src="/shop/shop-brake-rotor.webp"
               alt="Finish Line technician inspecting a brake rotor and caliper in Livonia, MI"
               fill
               className="object-cover"

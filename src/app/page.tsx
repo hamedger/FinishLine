@@ -30,7 +30,7 @@ export default function Home() {
         <div className="mx-auto grid max-w-6xl gap-6 px-4 sm:grid-cols-2 sm:px-6 lg:px-8">
           <div className="overflow-hidden rounded-2xl shadow-xl">
             <Image
-              src="/ase-certified-technicians.jpg"
+              src="/ase-certified-technicians.webp"
               alt="Finish Line employs ASE Certified technicians — professional service you can trust, with certified professionals, quality repairs, honest service, and all makes and models serviced"
               width={1536}
               height={1024}
@@ -40,7 +40,7 @@ export default function Home() {
           </div>
           <div className="overflow-hidden rounded-2xl shadow-xl">
             <Image
-              src="/best-oil-brands.jpg"
+              src="/best-oil-brands.webp"
               alt="Finish Line only uses premium oil brands: GM Dexos1 Approved, Ford Motorcraft, Lucas Oil Products, and Mobil 1 — for better protection, peak performance, and longer engine life"
               width={1536}
               height={1024}

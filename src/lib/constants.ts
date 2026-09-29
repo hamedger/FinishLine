@@ -384,46 +384,7 @@ export const FLEET_FEATURES = [
   "Maintenance records for your fleet",
 ] as const;
 
-export const FLEET_PARTNERS = [
-  {
-    name: "Enterprise",
-    href: "https://www.google.com/search?q=Enterprise+fleet+management",
-  },
-  {
-    name: "Holman",
-    href: "https://www.google.com/search?q=Holman+fleet+management",
-  },
-  {
-    name: "Element",
-    href: "https://www.google.com/search?q=Element+fleet+management",
-  },
-  {
-    name: "Wheels",
-    href: "https://www.google.com/search?q=Wheels+fleet+management",
-  },
-  {
-    name: "EMKAY",
-    href: "https://www.google.com/search?q=EMKAY+fleet+management",
-  },
-  {
-    name: "Voyager",
-    href: "https://www.google.com/search?q=Voyager+fleet+management",
-  },
-  {
-    name: "Merchants Fleet",
-    href: "https://www.google.com/search?q=Merchants+Fleet+management",
-  },
-  {
-    name: "Fleet Response",
-    href: "https://www.google.com/search?q=Fleet+Response+management",
-  },
-  {
-    name: "Mike Albert",
-    href: "https://www.google.com/search?q=Mike+Albert+fleet+management",
-  },
-] as const;
-
-export const FLEET_PARTNERS_IMAGE = "/fleet-partners.png";
+export const FLEET_PARTNERS_IMAGE = "/fleet-partners.webp";
 
 export const AREA_SERVED = [
   "Livonia",
