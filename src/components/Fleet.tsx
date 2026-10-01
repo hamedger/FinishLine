@@ -1,40 +1,31 @@
 import Image from "next/image";
-import { BUSINESS, FLEET_FEATURES, FLEET_PARTNERS_IMAGE } from "@/lib/constants";
+import {
+  BUSINESS,
+  FLEET_FEATURES,
+  FLEET_PARTNERS_IMAGE,
+  FLEET_PROGRAM_NAMES,
+} from "@/lib/constants";
 import { FleetForm } from "@/components/ContactForm";
 
 export function Fleet() {
   return (
-    <section id="fleet" className="bg-slate-50 py-20 sm:py-24">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid items-center gap-12 lg:grid-cols-2">
+    <section id="fleet" className="bg-[#F4F6F8] py-20 sm:py-24">
+      <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
+        <div className="grid gap-10 lg:grid-cols-[56%_44%] lg:gap-8">
           <div>
             <p className="text-sm font-bold uppercase tracking-widest text-brand-red">
-              Fleet Management
+              Fleet Service in Livonia
             </p>
-            <h2 className="mt-2 text-3xl font-extrabold tracking-tight text-brand-navy sm:text-4xl">
-              Keep Your Fleet on the Road
+            <h2 className="mt-2 text-3xl font-extrabold tracking-tight text-[#16212B] sm:text-4xl">
+              Keep your fleet on the road.
             </h2>
-            <p className="mt-4 text-lg leading-relaxed text-slate-600">
-              Whether you manage 3 vehicles or 30, Finish Line helps local
-              businesses stay on schedule with reliable maintenance, flexible
-              billing, and priority service — so your team spends less time in
-              the shop and more time working.
+            <p className="mt-4 text-lg leading-relaxed text-[#566270]">
+              Reliable maintenance for local businesses and fleet-managed
+              vehicles. Cars, pickup trucks, vans and light-duty commercial
+              vehicles welcome.
             </p>
 
-            <ul className="mt-8 space-y-3">
-              {FLEET_FEATURES.map((feature) => (
-                <li key={feature} className="flex items-start gap-3 text-slate-700">
-                  <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-red text-white">
-                    <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                    </svg>
-                  </span>
-                  {feature}
-                </li>
-              ))}
-            </ul>
-
-            <p className="mt-6 text-sm font-semibold text-brand-navy">
+            <p className="mt-8 text-sm font-bold text-[#16212B]">
               Fleet Programs We Accept
             </p>
             <div className="mt-3 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
@@ -46,41 +37,65 @@ export function Fleet() {
                 className="mx-auto h-auto w-full max-w-sm"
               />
             </div>
-            <p className="mt-3 text-sm text-slate-600">
-              Already enrolled? Bring your fleet vehicle — our team can verify
-              coverage and authorization.
+            <div className="mt-3 flex items-center justify-center rounded-2xl border border-dashed border-slate-300 bg-white p-4 text-center shadow-sm">
+              <p className="text-base font-bold text-[#16212B]">Fleetio</p>
+            </div>
+            <p className="mt-3 text-sm text-[#566270]">
+              Fleet program not listed? Please call {BUSINESS.phone}.
             </p>
+            <p className="mt-2 text-xs leading-relaxed text-[#566270]">
+              Accepted fleet programs: {FLEET_PROGRAM_NAMES.join(", ")}.
+            </p>
+
+            <p className="mt-10 text-lg font-bold text-[#16212B]">
+              Maintenance that keeps business moving
+            </p>
+            <ul className="mt-4 grid gap-x-6 gap-y-3 sm:grid-cols-2">
+              {FLEET_FEATURES.map((feature) => (
+                <li key={feature} className="flex items-start gap-2 text-[#566270]">
+                  <span className="font-bold text-brand-red" aria-hidden="true">
+                    +
+                  </span>
+                  {feature}
+                </li>
+              ))}
+            </ul>
 
             <a
               href={BUSINESS.phoneHref}
-              className="mt-8 inline-flex items-center gap-2 rounded-xl bg-brand-navy px-6 py-3.5 text-base font-bold text-white transition hover:bg-brand-slate"
+              className="mt-8 flex items-center justify-center gap-2 rounded-xl bg-[#D2232A] px-6 py-4 text-base font-bold text-white transition hover:opacity-90"
             >
-              <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-              </svg>
-              Call {BUSINESS.phone}
+              Call Fleet Service &nbsp;|&nbsp; {BUSINESS.phone}
             </a>
           </div>
 
-          <div className="space-y-6">
-            <div className="relative aspect-[16/10] overflow-hidden rounded-2xl shadow-xl">
-              <Image
-                src="/shop/shop-oil-pour-bmw.webp"
-                alt="Finish Line technician pouring fresh oil into a vehicle engine during a fleet oil change"
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-              />
+          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+            <h3 className="text-lg font-bold text-[#16212B]">
+              Request a Fleet Quote
+            </h3>
+            <p className="mt-1 text-sm text-[#566270]">
+              Tell us about your vehicles and service needs.
+            </p>
+            <FleetForm />
+
+            <p className="mt-4 text-center text-sm">
+              <a href={BUSINESS.phoneHref} className="font-semibold text-brand-red">
+                Or call {BUSINESS.phone}
+              </a>
+            </p>
+
+            <div className="mt-6 border-t border-slate-100 pt-6">
+              <p className="text-sm font-semibold text-[#16212B]">
+                Questions about coverage or billing?
+              </p>
+              <p className="mt-1 text-sm text-[#566270]">
+                Our team can help you confirm the next step.
+              </p>
             </div>
 
-            <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-              <h3 className="text-lg font-bold text-brand-navy">
-                Request a Fleet Quote
-              </h3>
-              <p className="mt-1 text-sm text-slate-600">
-                Tell us about your fleet and we&apos;ll get back to you shortly.
-              </p>
-              <FleetForm />
+            <div className="mt-6 border-t border-slate-100 pt-6 text-sm text-[#566270]">
+              <p className="font-semibold text-[#16212B]">{BUSINESS.name}</p>
+              <p>{BUSINESS.address.street}, {BUSINESS.address.city}, {BUSINESS.address.state}</p>
             </div>
           </div>
         </div>

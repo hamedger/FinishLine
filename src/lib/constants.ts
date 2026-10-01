@@ -276,78 +276,6 @@ export const COUPONS = [
 
 export const TESTIMONIALS = [
   {
-    name: "Katie Puga",
-    location: "Facebook Review",
-    text: "I'm thrilled I found this place. I've never been to a repair shop that has been so transparent!",
-    rating: 5,
-  },
-  {
-    name: "James Wagner",
-    location: "Facebook Review",
-    text: "I highly recommend these guys — they are not pushy, they are fast and friendly. I would definitely come back.",
-    rating: 5,
-  },
-  {
-    name: "Bobby Nowotny",
-    location: "Facebook Review",
-    text: "Thanks to Sam and the crew. Did great work at a good price.",
-    rating: 5,
-  },
-  {
-    name: "Breanna Gorski",
-    location: "Facebook Review",
-    text: "New tire in and out in 30 minutes or so. Very nice, and from out of town — got us on our way.",
-    rating: 5,
-  },
-  {
-    name: "Nikki Cote",
-    location: "Facebook Review",
-    text: "Treated very well and everyone is knowledgeable. Very comfortable visiting this place, unlike others that try to sell, sell, sell. Love it!",
-    rating: 5,
-  },
-  {
-    name: "Leah Moore",
-    location: "Facebook Review",
-    text: "Best service around. My husband and I have been going for years. Will never go anywhere else. Always fair and honest.",
-    rating: 5,
-  },
-  {
-    name: "Tahrir Zara",
-    location: "Facebook Review",
-    text: "Great place, great staff!!",
-    rating: 5,
-  },
-  {
-    name: "Taghrid Zara",
-    location: "Facebook Review",
-    text: "Best place, very skilled and knowledgeable.",
-    rating: 5,
-  },
-  {
-    name: "Allan A. Gorski",
-    location: "Facebook Review",
-    text: "Great quick service. Employees are great at what they do.",
-    rating: 5,
-  },
-  {
-    name: "Daniel Miller",
-    location: "Facebook Review",
-    text: "Thanks for the fast, professional service.",
-    rating: 5,
-  },
-  {
-    name: "Amber Hall",
-    location: "Facebook Review",
-    text: "Great staff, quick service and fair prices. Won't go anywhere else again.",
-    rating: 5,
-  },
-  {
-    name: "Bridgette Desira",
-    location: "Facebook Review",
-    text: "Went in today for the first time to get my oil changed. Apparently Wednesdays are ladies day so I got $5 off :) It was super quick, and the guys were really nice. Will be going here from now on!",
-    rating: 5,
-  },
-  {
     name: "Shamya Mason",
     location: "Google Review",
     text: "I had a great experience. Alex was very knowledgeable and knew what he was doing. I will definitely be returning!",
@@ -416,6 +344,21 @@ export const FLEET_FEATURES = [
 ] as const;
 
 export const FLEET_PARTNERS_IMAGE = "/fleet-partners.webp";
+
+// All accepted fleet programs, including Fleetio. Listed as real text (not
+// just logos) so every company name is searchable/readable in the HTML.
+export const FLEET_PROGRAM_NAMES = [
+  "Enterprise",
+  "Holman",
+  "Element",
+  "Wheels",
+  "EMKAY",
+  "Voyager",
+  "Merchants Fleet",
+  "Fleet Response",
+  "Mike Albert",
+  "Fleetio",
+] as const;
 
 export const AREA_SERVED = [
   "Livonia",

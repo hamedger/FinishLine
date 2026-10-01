@@ -16,7 +16,7 @@ import { Pricing } from "@/components/Pricing";
 
 const oilChangeService = SERVICES.find((service) => service.id === "oil-change")!;
 const oilChangeCoupon = COUPONS.find((coupon) => coupon.id === "any-oil-change");
-const oilChangeTestimonials = TESTIMONIALS.slice(0, 4);
+const oilChangeTestimonials = TESTIMONIALS;
 
 export const metadata: Metadata = {
   title: "Oil Change in Livonia, MI — Walk-In Welcome",
@@ -131,6 +131,11 @@ export default function OilChangeLivoniaPage() {
               <p className="mt-4 text-base leading-relaxed text-slate-600">
                 {oilChangeService.closing}
               </p>
+              <p className="mt-4 text-base leading-relaxed text-slate-600">
+                We stock trusted brands for every vehicle, including Mobil 1,
+                GM Dexos, Ford Motorcraft, Lucas Oil, and Shell Rotella T6 for
+                diesel and heavy-duty applications.
+              </p>
             </div>
 
             <div className="rounded-2xl border border-slate-200 bg-slate-50 p-8">
@@ -166,6 +171,18 @@ export default function OilChangeLivoniaPage() {
               className="h-auto w-full"
               sizes="(max-width: 1024px) 100vw, 1024px"
             />
+          </div>
+          <div className="mt-3 flex items-center justify-center gap-4 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+            <Image
+              src="/shell-rotella-t6.webp"
+              alt="Shell Rotella T6 premium motor oil"
+              width={906}
+              height={467}
+              className="h-10 w-auto shrink-0"
+            />
+            <p className="text-sm font-semibold text-slate-700">
+              Also available: Shell Rotella T6
+            </p>
           </div>
         </div>
       </section>

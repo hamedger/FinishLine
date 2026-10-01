@@ -17,7 +17,7 @@ const brakeService = SERVICES.find((service) => service.id === "brakes")!;
 const brakeCoupon = COUPONS.find(
   (coupon) => coupon.id === "brakes-suspension-repair",
 );
-const brakeTestimonials = TESTIMONIALS.slice(4, 8);
+const brakeTestimonials = TESTIMONIALS;
 
 export const metadata: Metadata = {
   title: "Brake Repair in Livonia, MI — Walk-In Welcome",

@@ -15,7 +15,7 @@ import { AutoRepairServiceSchema } from "@/components/ServiceSchema";
 const repairCoupon = COUPONS.find(
   (coupon) => coupon.id === "brakes-suspension-repair",
 );
-const autoRepairTestimonials = TESTIMONIALS.slice(2, 6);
+const autoRepairTestimonials = TESTIMONIALS;
 
 const AUTO_REPAIR_ITEMS = [
   "Check Engine Light Diagnostics",

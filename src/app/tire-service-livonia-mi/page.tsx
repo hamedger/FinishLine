@@ -13,7 +13,7 @@ import { FaqSchema } from "@/components/FaqSchema";
 import { TireServiceSchema } from "@/components/ServiceSchema";
 
 const tireService = SERVICES.find((service) => service.id === "tires")!;
-const tireTestimonials = TESTIMONIALS.slice(8, 12);
+const tireTestimonials = TESTIMONIALS;
 
 export const metadata: Metadata = {
   title: "Tire Service in Livonia, MI — Walk-In Welcome",

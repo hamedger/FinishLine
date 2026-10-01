@@ -119,24 +119,32 @@ export function ContactForm({
 
   return (
     <form onSubmit={handleSubmit} className="mt-5 space-y-4">
-      {formType === "fleet" && (
+      {formType === "fleet" ? (
         <>
           <Field label="Company Name" name="company" required />
-          <Field
-            label="Fleet Size"
-            name="fleetSize"
-            placeholder="e.g. 5 vehicles"
-            required
-          />
+          <div className="grid gap-4 sm:grid-cols-2">
+            <Field
+              label="Fleet Size"
+              name="fleetSize"
+              placeholder="e.g. 5 vehicles"
+              required
+            />
+            <Field label="Your Name" name="name" required />
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2">
+            <Field label="Phone" name="phone" type="tel" required />
+            <Field label="Email" name="email" type="email" required />
+          </div>
+        </>
+      ) : (
+        <>
+          <div className="grid gap-4 sm:grid-cols-2">
+            <Field label="Your Name" name="name" required />
+            <Field label="Phone" name="phone" type="tel" required />
+          </div>
+          <Field label="Email" name="email" type="email" required />
         </>
       )}
-
-      <div className="grid gap-4 sm:grid-cols-2">
-        <Field label="Your Name" name="name" required />
-        <Field label="Phone" name="phone" type="tel" required />
-      </div>
-
-      <Field label="Email" name="email" type="email" required />
 
       <div>
         <label htmlFor="message" className="mb-1.5 block text-sm font-medium text-slate-700">
@@ -204,5 +212,5 @@ function Field({
 }
 
 export function FleetForm() {
-  return <ContactForm formType="fleet" submitLabel="Request Fleet Quote" />;
+  return <ContactForm formType="fleet" submitLabel="Get My Fleet Service Quote" />;
 }

@@ -123,6 +123,20 @@ export function Testimonials() {
           ))}
         </div>
       </div>
+
+      <div className="mt-10 text-center">
+        <a
+          href={BUSINESS.googlePlaceUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 text-sm font-bold text-white underline decoration-brand-red underline-offset-4 transition hover:text-brand-red"
+        >
+          Read All Google Reviews
+          <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </a>
+      </div>
     </section>
   );
 }
