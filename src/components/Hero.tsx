@@ -4,22 +4,9 @@ import { BUSINESS } from "@/lib/constants";
 export function Hero() {
   return (
     <section className="relative overflow-hidden bg-brand-navy">
-      <div className="absolute inset-0">
-        <Image
-          src="/shop/shop-hero-bay-wide.webp"
-          alt="Inside the Finish Line Oil Change and Repair service bays in Livonia, MI"
-          fill
-          className="object-cover object-right opacity-50 sm:opacity-55 lg:object-[center_25%]"
-          priority
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-brand-navy via-brand-navy/80 to-brand-navy/25" />
-      </div>
-
-      <div className="checker-bg absolute bottom-0 left-0 right-0 h-2 opacity-90" aria-hidden="true" />
-
-      <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-28 lg:px-8 lg:py-32">
-        <div className="max-w-2xl animate-fade-up">
+      <div className="mx-auto max-w-7xl lg:grid lg:grid-cols-2 lg:items-stretch">
+        <div className="relative z-10 px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24 lg:flex lg:flex-col lg:justify-center">
+          <div className="animate-fade-up">
           <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-sm font-medium text-white backdrop-blur-sm">
             <span className="h-2 w-2 rounded-full bg-emerald-400" aria-hidden="true" />
             Walk-In Welcome — No Appointment Needed
@@ -88,8 +75,26 @@ export function Hero() {
               </div>
             ))}
           </div>
+          </div>
+        </div>
+
+        <div className="relative aspect-[4/5] w-full lg:aspect-auto">
+          <Image
+            src="/shop/shop-oil-pour-bmw.webp"
+            alt="Finish Line technician performing an oil change on a vehicle in the Livonia service bay"
+            fill
+            className="object-cover"
+            priority
+            sizes="(max-width: 1024px) 100vw, 50vw"
+          />
+          <div
+            className="pointer-events-none absolute inset-y-0 left-0 hidden w-20 bg-gradient-to-r from-brand-navy to-transparent lg:block"
+            aria-hidden="true"
+          />
         </div>
       </div>
+
+      <div className="checker-bg h-2 w-full" aria-hidden="true" />
     </section>
   );
 }
