@@ -486,6 +486,39 @@ export const AUTO_REPAIR_FAQS = [
   },
 ] as const;
 
+export const FLEET_FAQS = [
+  {
+    question: "What fleet maintenance programs does Finish Line accept?",
+    answer:
+      "We accept Enterprise, Holman, Element, Wheels, EMKAY, Voyager, Merchants Fleet, Fleet Response, Mike Albert, and Fleetio. If your program isn't listed, call us at (734) 367-6457 — we can often still help.",
+  },
+  {
+    question: "Do I need an appointment for fleet vehicle service?",
+    answer:
+      "No appointment is needed. Finish Line is a walk-in shop — drive your fleet vehicle to 11900 Middlebelt Rd, Suite A during business hours and our team will verify coverage and get started.",
+  },
+  {
+    question: "How does billing and authorization work for fleet vehicles?",
+    answer:
+      "We verify your fleet program coverage and authorization before performing service. Billing follows your program's standard process — bring your fleet card or authorization details when you visit.",
+  },
+  {
+    question: "What vehicles do you service for fleets?",
+    answer:
+      "Cars, pickup trucks, vans, and light-duty commercial vehicles. We handle oil changes, brakes, tires, batteries, diagnostics, fluids, and general maintenance for fleet-managed vehicles.",
+  },
+  {
+    question: "Can you set up volume pricing or dedicated account support?",
+    answer:
+      "Yes. We offer volume pricing for multiple vehicles, flexible billing options, priority service, and maintenance records for your fleet. Request a quote or call (734) 367-6457 to set up an account.",
+  },
+  {
+    question: "Do you serve fleets outside Livonia?",
+    answer:
+      "Yes. We serve fleet-managed vehicles from Livonia, Westland, Redford, Farmington Hills, Canton, and surrounding Wayne County communities.",
+  },
+] as const;
+
 export const NAV_LINKS = [
   { href: "#services", label: "Services" },
   { href: "#coupons", label: "Coupons" },
@@ -499,6 +532,7 @@ export const FOOTER_LINKS = [
   { href: "/brake-repair-livonia-mi", label: "Brake Repair Livonia" },
   { href: "/tire-service-livonia-mi", label: "Tire Service Livonia" },
   { href: "/auto-repair-livonia-mi", label: "Auto Repair Livonia" },
+  { href: "/fleet-maintenance-livonia-mi", label: "Fleet Maintenance Livonia" },
   { href: "/#services", label: "Services" },
   { href: "/#coupons", label: "Coupons" },
   { href: "/#fleet", label: "Fleet" },

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import {
   BUSINESS,
   FLEET_FEATURES,
@@ -67,6 +68,13 @@ export function Fleet() {
             >
               Call Fleet Service &nbsp;|&nbsp; {BUSINESS.phone}
             </a>
+
+            <Link
+              href="/fleet-maintenance-livonia-mi"
+              className="mt-4 inline-flex text-sm font-bold text-brand-red transition hover:text-brand-red-dark"
+            >
+              Learn more about fleet maintenance in Livonia →
+            </Link>
           </div>
 
           <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">

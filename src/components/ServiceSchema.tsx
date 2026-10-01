@@ -89,3 +89,14 @@ export function AutoRepairServiceSchema() {
     />
   );
 }
+
+export function FleetServiceSchema() {
+  return (
+    <LocalServiceSchema
+      name="Fleet Maintenance in Livonia, MI"
+      description="Fleet maintenance and fleet oil changes in Livonia, Michigan for local businesses and fleet-managed cars, pickup trucks, vans, and light-duty commercial vehicles."
+      serviceType="Fleet Maintenance"
+      path="/fleet-maintenance-livonia-mi"
+    />
+  );
+}

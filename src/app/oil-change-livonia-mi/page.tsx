@@ -354,6 +354,12 @@ export default function OilChangeLivoniaPage() {
             >
               Contact &amp; Hours
             </Link>
+            <Link
+              href="/fleet-maintenance-livonia-mi"
+              className="inline-flex items-center justify-center rounded-xl border border-white/20 px-8 py-4 font-bold text-white transition hover:bg-white/10"
+            >
+              Fleet Service
+            </Link>
           </div>
         </div>
       </section>
