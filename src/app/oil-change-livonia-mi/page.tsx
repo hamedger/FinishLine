@@ -12,6 +12,7 @@ import {
 } from "@/lib/constants";
 import { FaqSchema } from "@/components/FaqSchema";
 import { OilChangeServiceSchema } from "@/components/ServiceSchema";
+import { Pricing } from "@/components/Pricing";
 
 const oilChangeService = SERVICES.find((service) => service.id === "oil-change")!;
 const oilChangeCoupon = COUPONS.find((coupon) => coupon.id === "any-oil-change");
@@ -100,6 +101,8 @@ export default function OilChangeLivoniaPage() {
           </div>
         </div>
       </section>
+
+      <Pricing />
 
       <section className="bg-white py-10">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">

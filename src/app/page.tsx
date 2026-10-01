@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Hero } from "@/components/Hero";
+import { Pricing } from "@/components/Pricing";
 import { CouponsStrip } from "@/components/CouponsStrip";
 import { Services } from "@/components/Services";
 import { Coupons } from "@/components/Coupons";
@@ -25,6 +26,7 @@ export default function Home() {
     <>
       <CouponsStrip />
       <Hero />
+      <Pricing />
 
       <section className="bg-white py-10">
         <div className="mx-auto grid max-w-6xl gap-6 px-4 sm:grid-cols-2 sm:px-6 lg:px-8">

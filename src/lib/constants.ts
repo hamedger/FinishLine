@@ -52,6 +52,37 @@ export const BUSINESS = {
   },
 } as const;
 
+export const OIL_CHANGE_PRICING = [
+  {
+    id: "good",
+    tier: "Good",
+    label: "Conventional Oil Change",
+    price: "29.95",
+    bandClass: "bg-brand-red",
+  },
+  {
+    id: "better",
+    tier: "Better",
+    label: "Synthetic Blend / High Mileage",
+    price: "44.95",
+    bandClass: "bg-blue-600",
+  },
+  {
+    id: "best",
+    tier: "Best",
+    label: "Full Synthetic (Dexos®)",
+    price: "59.95",
+    bandClass: "bg-amber-500",
+  },
+  {
+    id: "premium",
+    tier: "Premium",
+    label: "Mobil 1 Full Synthetic",
+    price: "79.95",
+    bandClass: "bg-slate-900",
+  },
+] as const;
+
 export const SERVICES = [
   {
     id: "oil-change",
