@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { BUSINESS } from "@/lib/constants";
 
 export function StickyCallButton() {
@@ -26,6 +27,16 @@ export function StickyCallButton() {
             <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
           </svg>
         </a>
+        <Link
+          href="/#coupons"
+          className="flex items-center justify-center rounded-xl border-2 border-white/40 px-4 py-3.5 text-white"
+          aria-label="View coupons"
+        >
+          <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M9 5H7a2 2 0 00-2 2v3.586a1 1 0 00.293.707l6.414 6.414a1 1 0 001.414 0l5.586-5.586a1 1 0 000-1.414l-6.414-6.414A1 1 0 0011.586 4H9z" />
+            <circle cx="9.5" cy="8.5" r="1" fill="currentColor" stroke="none" />
+          </svg>
+        </Link>
       </div>
     </div>
   );
