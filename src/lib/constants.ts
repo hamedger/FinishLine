@@ -343,8 +343,6 @@ export const FLEET_FEATURES = [
   "Maintenance records for your fleet",
 ] as const;
 
-export const FLEET_PARTNERS_IMAGE = "/fleet-partners.webp";
-
 // All accepted fleet programs, including Fleetio. Listed as real text (not
 // just logos) so every company name is searchable/readable in the HTML.
 export const FLEET_PROGRAM_NAMES = [
@@ -358,6 +356,21 @@ export const FLEET_PROGRAM_NAMES = [
   "Fleet Response",
   "Mike Albert",
   "Fleetio",
+] as const;
+
+// One equal tile per accepted fleet program. Fleetio gets no special
+// treatment — same tile styling as every other program.
+export const FLEET_LOGOS = [
+  { name: "Enterprise", src: "/fleet-logos/enterprise.webp" },
+  { name: "Holman", src: "/fleet-logos/holman.webp" },
+  { name: "Element", src: "/fleet-logos/element.webp" },
+  { name: "Wheels", src: "/fleet-logos/wheels.webp" },
+  { name: "EMKAY", src: "/fleet-logos/emkay.webp" },
+  { name: "Voyager", src: "/fleet-logos/voyager.webp" },
+  { name: "Merchants Fleet", src: "/fleet-logos/merchants-fleet.webp" },
+  { name: "Fleet Response", src: "/fleet-logos/fleet-response.webp" },
+  { name: "Mike Albert", src: "/fleet-logos/mike-albert.webp" },
+  { name: "Fleetio", src: "/fleet-logos/fleetio.webp" },
 ] as const;
 
 export const AREA_SERVED = [

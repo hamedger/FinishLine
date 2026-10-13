@@ -1,12 +1,7 @@
-import Image from "next/image";
 import Link from "next/link";
-import {
-  BUSINESS,
-  FLEET_FEATURES,
-  FLEET_PARTNERS_IMAGE,
-  FLEET_PROGRAM_NAMES,
-} from "@/lib/constants";
+import { BUSINESS, FLEET_FEATURES } from "@/lib/constants";
 import { FleetForm } from "@/components/ContactForm";
+import { FleetLogoGrid } from "@/components/FleetLogoGrid";
 
 export function Fleet() {
   return (
@@ -26,27 +21,9 @@ export function Fleet() {
               vehicles welcome.
             </p>
 
-            <p className="mt-8 text-sm font-bold text-[#16212B]">
-              Fleet Programs We Accept
-            </p>
-            <div className="mt-3 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
-              <Image
-                src={FLEET_PARTNERS_IMAGE}
-                alt="Fleet management partners: Enterprise, Holman, Element, Wheels, EMKAY, Voyager, Merchants Fleet, Fleet Response, and Mike Albert"
-                width={686}
-                height={1107}
-                className="mx-auto h-auto w-full max-w-sm"
-              />
+            <div className="mt-8">
+              <FleetLogoGrid />
             </div>
-            <div className="mt-3 flex items-center justify-center rounded-2xl border border-dashed border-slate-300 bg-white p-4 text-center shadow-sm">
-              <p className="text-base font-bold text-[#16212B]">Fleetio</p>
-            </div>
-            <p className="mt-3 text-sm text-[#566270]">
-              Fleet program not listed? Please call {BUSINESS.phone}.
-            </p>
-            <p className="mt-2 text-xs leading-relaxed text-[#566270]">
-              Accepted fleet programs: {FLEET_PROGRAM_NAMES.join(", ")}.
-            </p>
 
             <p className="mt-10 text-lg font-bold text-[#16212B]">
               Maintenance that keeps business moving
@@ -90,6 +67,7 @@ export function Fleet() {
               <a href={BUSINESS.phoneHref} className="font-semibold text-brand-red">
                 Or call {BUSINESS.phone}
               </a>
+              . Most requests answered the same business day.
             </p>
 
             <div className="mt-6 border-t border-slate-100 pt-6">

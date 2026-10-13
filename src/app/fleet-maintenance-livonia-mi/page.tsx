@@ -1,21 +1,20 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import {
   AREA_SERVED,
   BUSINESS,
   FLEET_FAQS,
   FLEET_FEATURES,
-  FLEET_PARTNERS_IMAGE,
   FLEET_PROGRAM_NAMES,
   SITE_URL,
 } from "@/lib/constants";
 import { FaqSchema } from "@/components/FaqSchema";
 import { FleetServiceSchema } from "@/components/ServiceSchema";
 import { FleetForm } from "@/components/ContactForm";
+import { FleetLogoGrid } from "@/components/FleetLogoGrid";
 
 export const metadata: Metadata = {
-  title: "Fleet Maintenance & Oil Changes in Livonia | Finish Line",
+  title: "Fleet Maintenance & Oil Changes in Livonia",
   description:
     "Fleet oil changes and maintenance in Livonia for cars, trucks and vans. Finish Line accepts fleet programs including Fleetio. Call (734) 367-6457.",
   keywords: [
@@ -107,22 +106,12 @@ export default function FleetMaintenanceLivoniaPage() {
                 businesses.
               </p>
 
-              <div className="mt-6 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
-                <Image
-                  src={FLEET_PARTNERS_IMAGE}
-                  alt="Fleet management partners: Enterprise, Holman, Element, Wheels, EMKAY, Voyager, Merchants Fleet, Fleet Response, and Mike Albert"
-                  width={686}
-                  height={1107}
-                  className="mx-auto h-auto w-full max-w-sm"
-                />
-              </div>
-              <div className="mt-3 flex items-center justify-center rounded-2xl border border-dashed border-slate-300 bg-white p-4 text-center shadow-sm">
-                <p className="text-base font-bold text-brand-navy">Fleetio</p>
+              <div className="mt-6">
+                <FleetLogoGrid showHeading={false} />
               </div>
 
               <p className="mt-4 text-sm text-slate-600">
                 Accepted fleet programs: {FLEET_PROGRAM_NAMES.join(", ")}.
-                Fleet program not listed? Please call {BUSINESS.phone}.
               </p>
             </div>
 
@@ -186,6 +175,7 @@ export default function FleetMaintenanceLivoniaPage() {
                 <a href={BUSINESS.phoneHref} className="font-semibold text-brand-red">
                   Or call {BUSINESS.phone}
                 </a>
+                . Most requests answered the same business day.
               </p>
             </div>
           </div>
