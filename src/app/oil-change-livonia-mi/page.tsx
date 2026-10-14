@@ -165,24 +165,12 @@ export default function OilChangeLivoniaPage() {
           <div className="overflow-hidden rounded-2xl shadow-xl">
             <Image
               src="/best-oil-brands.webp"
-              alt="Finish Line only uses premium oil brands: GM Dexos1 Approved, Ford Motorcraft, Lucas Oil Products, and Mobil 1 — for better protection, peak performance, and longer engine life"
+              alt="Finish Line only uses premium oil brands: GM Dexos1 Approved, Ford Motorcraft, Lucas Oil Products, Mobil 1, and Shell Rotella T6 — for better protection, peak performance, and longer engine life"
               width={1536}
               height={1024}
               className="h-auto w-full"
               sizes="(max-width: 1024px) 100vw, 1024px"
             />
-          </div>
-          <div className="mt-3 flex items-center justify-center gap-4 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
-            <Image
-              src="/shell-rotella-t6.webp"
-              alt="Shell Rotella T6 premium motor oil"
-              width={906}
-              height={467}
-              className="h-10 w-auto shrink-0"
-            />
-            <p className="text-sm font-semibold text-slate-700">
-              Also available: Shell Rotella T6
-            </p>
           </div>
         </div>
       </section>

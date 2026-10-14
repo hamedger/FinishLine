@@ -59,6 +59,7 @@ export const OIL_CHANGE_PRICING = [
     label: "Conventional Oil Change",
     price: "29.95",
     bandClass: "bg-brand-red",
+    description: "Conventional motor oil for vehicles that specify it.",
   },
   {
     id: "better",
@@ -66,6 +67,7 @@ export const OIL_CHANGE_PRICING = [
     label: "Synthetic Blend / High Mileage",
     price: "44.95",
     bandClass: "bg-blue-600",
+    description: "Synthetic blend for compatible high-mileage vehicles.",
   },
   {
     id: "best",
@@ -73,6 +75,7 @@ export const OIL_CHANGE_PRICING = [
     label: "Full Synthetic (Dexos®)",
     price: "59.95",
     bandClass: "bg-amber-500",
+    description: "Dexos®-spec full synthetic for vehicles that require it.",
   },
   {
     id: "premium",
@@ -80,6 +83,7 @@ export const OIL_CHANGE_PRICING = [
     label: "Mobil 1 Full Synthetic",
     price: "79.95",
     bandClass: "bg-slate-900",
+    description: "Mobil 1 full synthetic with advanced engine protection.",
   },
 ] as const;
 
