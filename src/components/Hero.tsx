@@ -86,7 +86,7 @@ export function Hero() {
             src="/shop/shop-oil-pour-bmw.webp"
             alt="Finish Line technician performing an oil change on a vehicle in the Livonia service bay"
             fill
-            className="object-cover object-[65%_20%]"
+            className="object-cover object-center"
             priority
             sizes="(max-width: 1024px) 100vw, 50vw"
           />
