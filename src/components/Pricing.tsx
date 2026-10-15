@@ -19,9 +19,6 @@ export function Pricing() {
             <span className="text-brand-navy">Oil Change </span>
             <span className="text-brand-red">Pricing</span>
           </h2>
-          <p className="mt-4 text-lg text-slate-600">
-            Up to 5 quarts &middot; Premium oil filter included
-          </p>
         </div>
 
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -53,6 +50,9 @@ export function Pricing() {
                 <div className="mt-2 flex justify-center">
                   <OilDropIcon />
                 </div>
+                <p className="mt-3 text-xs font-bold uppercase tracking-wide text-slate-700">
+                  Up to 5 Quarts &middot; Premium Filter Included
+                </p>
                 <p className="mt-3 text-xs leading-relaxed text-slate-500">
                   {tier.description}
                 </p>
