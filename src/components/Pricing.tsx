@@ -2,10 +2,31 @@ import Image from "next/image";
 import Link from "next/link";
 import { BUSINESS, OIL_CHANGE_PRICING } from "@/lib/constants";
 
-function OilDropIcon() {
+function OilCanIcon() {
   return (
-    <svg className="h-6 w-6 text-slate-300" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M12 2C9 7 5 11.5 5 15a7 7 0 0014 0c0-3.5-4-8-7-13z" />
+    <svg
+      className="h-7 w-auto text-slate-300"
+      viewBox="0 0 69 32"
+      fill="currentColor"
+      aria-hidden="true"
+    >
+      {/* handle loop */}
+      <path
+        d="M13.5 9.2 C7.5 8.2 3.2 10.8 3.0 14.4 C2.8 18.0 7.8 19.2 13.6 18.2"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="3.1"
+        strokeLinecap="round"
+      />
+      {/* filler cap: wide lip + neck */}
+      <rect x="17.5" y="2.2" width="13.5" height="3.0" rx="1.2" />
+      <rect x="22.0" y="4.8" width="4.6" height="5.2" />
+      {/* body */}
+      <path d="M13.6 9.4 H46.5 L52.6 13.2 L46.2 28.4 a2.2 2.2 0 0 1 -2.0 1.3 H18.6 a2.2 2.2 0 0 1 -2.1 -1.5 Z" />
+      {/* spout */}
+      <path d="M45.8 9.9 L63.8 4.6 a1.05 1.05 0 0 1 0.75 1.9 L50.4 13.8 Z" />
+      {/* falling drop */}
+      <path d="M62.8 14.2 c2.6 3.6 3.8 5.5 3.8 7.0 a3.8 3.8 0 0 1 -7.6 0 c0 -1.5 1.2 -3.4 3.8 -7.0 Z" />
     </svg>
   );
 }
@@ -48,7 +69,7 @@ export function Pricing() {
                 </p>
                 <p className="mt-1 text-4xl font-black text-brand-red">${tier.price}</p>
                 <div className="mt-2 flex justify-center">
-                  <OilDropIcon />
+                  <OilCanIcon />
                 </div>
                 <p className="mt-3 text-xs font-bold uppercase tracking-wide text-slate-700">
                   Up to 5 Quarts &middot; Premium Filter Included
