@@ -360,6 +360,11 @@ export const FLEET_PROGRAM_NAMES = [
   "Fleet Response",
   "Mike Albert",
   "Fleetio",
+  "CarAdvise",
+  "Fast Track",
+  "GSA Fleet",
+  "Summit Fleet",
+  "Union Leasing / Momentum Fleet Management",
 ] as const;
 
 // One equal tile per accepted fleet program. Fleetio gets no special
@@ -375,6 +380,11 @@ export const FLEET_LOGOS = [
   { name: "Fleet Response", src: "/fleet-logos/fleet-response.webp" },
   { name: "Mike Albert", src: "/fleet-logos/mike-albert.webp" },
   { name: "Fleetio", src: "/fleet-logos/fleetio.webp" },
+  { name: "CarAdvise", src: "/fleet-logos/caradvise.webp" },
+  { name: "Fast Track Fleet Services", src: "/fleet-logos/fast-track.webp" },
+  { name: "GSA Fleet", src: "/fleet-logos/gsa-fleet.webp" },
+  { name: "Summit Fleet", src: "/fleet-logos/summit-fleet.webp" },
+  { name: "Union Leasing / Momentum Fleet Management", src: "/fleet-logos/union-leasing.webp" },
 ] as const;
 
 export const AREA_SERVED = [
