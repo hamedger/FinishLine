@@ -10,7 +10,7 @@ export function Services() {
 
   return (
     <section id="services" className="bg-slate-50 py-20 sm:py-24">
-      <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-bold uppercase tracking-widest text-brand-red">
             Our Services
@@ -24,7 +24,7 @@ export function Services() {
           </p>
         </div>
 
-        <div className="mt-10 space-y-3">
+        <div className="mt-10 grid gap-3 sm:grid-cols-2">
           {SERVICES.map((service) => {
             const isOpen = openId === service.id;
 

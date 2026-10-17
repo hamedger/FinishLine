@@ -77,16 +77,16 @@ export function Pricing() {
                 <p className="mt-3 text-xs leading-relaxed text-slate-500">
                   {tier.description}
                 </p>
+                <p className="mt-4 border-t border-slate-100 pt-3 text-[11px] leading-relaxed text-slate-400">
+                  Taxes and shop fee extra. Specialty filters or additional oil may
+                  cost extra.
+                </p>
               </div>
             </div>
           ))}
         </div>
 
-        <p className="mt-8 rounded-xl bg-slate-100 py-3 text-center text-sm text-slate-500">
-          Taxes and shop fee extra. Special filters or additional oil may cost extra.
-        </p>
-
-        <div className="mt-6 flex flex-col items-center gap-3">
+        <div className="mt-8 flex flex-col items-center gap-3">
           <a
             href={BUSINESS.phoneHref}
             className="flex w-full items-center justify-center gap-2 rounded-xl bg-brand-red px-8 py-4 text-center text-lg font-extrabold uppercase tracking-wide text-white shadow-lg transition hover:bg-brand-red-dark sm:w-auto"
