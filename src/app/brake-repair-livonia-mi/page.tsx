@@ -75,29 +75,31 @@ export default function BrakeRepairLivoniaPage() {
               business hours and our team will inspect and repair your brakes.
             </p>
 
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            <div className="mt-8">
               <a
                 href={BUSINESS.phoneHref}
-                className="inline-flex items-center justify-center rounded-xl bg-brand-red px-8 py-4 text-lg font-bold text-white transition hover:bg-brand-red-dark"
+                className="flex w-full items-center justify-center rounded-xl bg-brand-red px-8 py-4 text-center text-lg font-bold text-white transition hover:bg-brand-red-dark sm:w-auto"
               >
                 Call {BUSINESS.phone}
               </a>
-              <a
-                href={BUSINESS.mapsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-xl border border-white/20 px-8 py-4 text-lg font-bold text-white transition hover:bg-white/10"
-              >
-                Get Directions
-              </a>
-              <a
-                href={BUSINESS.googleReviewUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-xl border border-white/20 px-8 py-4 text-lg font-bold text-white transition hover:bg-white/10"
-              >
-                Review on Google
-              </a>
+              <div className="mt-3 flex flex-row flex-wrap gap-2">
+                <a
+                  href={BUSINESS.mapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center rounded-lg border border-white/25 px-4 py-2 text-sm font-semibold text-white/90 transition hover:bg-white/10"
+                >
+                  Get Directions
+                </a>
+                <a
+                  href={BUSINESS.googleReviewUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center rounded-lg border border-white/25 px-4 py-2 text-sm font-semibold text-white/90 transition hover:bg-white/10"
+                >
+                  Review on Google
+                </a>
+              </div>
             </div>
           </div>
         </div>

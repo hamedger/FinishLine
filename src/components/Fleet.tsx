@@ -1,9 +1,14 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 import { BUSINESS, FLEET_FEATURES } from "@/lib/constants";
 import { FleetForm } from "@/components/ContactForm";
 import { FleetLogoGrid } from "@/components/FleetLogoGrid";
 
 export function Fleet() {
+  const [formOpen, setFormOpen] = useState(false);
+
   return (
     <section id="fleet" className="bg-[#F4F6F8] py-20 sm:py-24">
       <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
@@ -54,34 +59,46 @@ export function Fleet() {
             </Link>
           </div>
 
-          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
-            <h3 className="text-lg font-bold text-[#16212B]">
-              Request a Fleet Quote
-            </h3>
-            <p className="mt-1 text-sm text-[#566270]">
-              Tell us about your vehicles and service needs.
-            </p>
-            <FleetForm />
+          <div>
+            {!formOpen && (
+              <button
+                type="button"
+                onClick={() => setFormOpen(true)}
+                className="flex w-full items-center justify-center gap-2 rounded-xl border-2 border-brand-red px-6 py-4 text-base font-bold text-brand-red transition hover:bg-brand-red/5 lg:hidden"
+              >
+                Request a Fleet Quote →
+              </button>
+            )}
 
-            <p className="mt-4 text-center text-sm">
-              <a href={BUSINESS.phoneHref} className="font-semibold text-brand-red">
-                Or call {BUSINESS.phone}
-              </a>
-              . Most requests answered the same business day.
-            </p>
-
-            <div className="mt-6 border-t border-slate-100 pt-6">
-              <p className="text-sm font-semibold text-[#16212B]">
-                Questions about coverage or billing?
-              </p>
+            <div className={`${formOpen ? "block" : "hidden"} rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8 lg:block`}>
+              <h3 className="text-lg font-bold text-[#16212B]">
+                Request a Fleet Quote
+              </h3>
               <p className="mt-1 text-sm text-[#566270]">
-                Our team can help you confirm the next step.
+                Tell us about your vehicles and service needs.
               </p>
-            </div>
+              <FleetForm />
 
-            <div className="mt-6 border-t border-slate-100 pt-6 text-sm text-[#566270]">
-              <p className="font-semibold text-[#16212B]">{BUSINESS.name}</p>
-              <p>{BUSINESS.address.street}, {BUSINESS.address.city}, {BUSINESS.address.state}</p>
+              <p className="mt-4 text-center text-sm">
+                <a href={BUSINESS.phoneHref} className="font-semibold text-brand-red">
+                  Or call {BUSINESS.phone}
+                </a>
+                . Most requests answered the same business day.
+              </p>
+
+              <div className="mt-6 border-t border-slate-100 pt-6">
+                <p className="text-sm font-semibold text-[#16212B]">
+                  Questions about coverage or billing?
+                </p>
+                <p className="mt-1 text-sm text-[#566270]">
+                  Our team can help you confirm the next step.
+                </p>
+              </div>
+
+              <div className="mt-6 border-t border-slate-100 pt-6 text-sm text-[#566270]">
+                <p className="font-semibold text-[#16212B]">{BUSINESS.name}</p>
+                <p>{BUSINESS.address.street}, {BUSINESS.address.city}, {BUSINESS.address.state}</p>
+              </div>
             </div>
           </div>
         </div>

@@ -5,7 +5,7 @@ export function Hero() {
   return (
     <section className="relative overflow-hidden bg-brand-navy">
       <div className="mx-auto max-w-7xl lg:grid lg:grid-cols-[58%_42%] lg:items-stretch">
-        <div className="relative z-10 px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24 lg:flex lg:flex-col lg:justify-center">
+        <div className="relative z-10 px-4 py-10 sm:px-6 sm:py-20 lg:px-8 lg:py-24 lg:flex lg:flex-col lg:justify-center">
           <div className="animate-fade-up">
           <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-sm font-medium text-white backdrop-blur-sm">
             <span className="h-2 w-2 rounded-full bg-emerald-400" aria-hidden="true" />
@@ -39,7 +39,7 @@ export function Hero() {
               Call Now &nbsp;{BUSINESS.phone}
             </a>
 
-            <div className="mt-3 flex flex-col gap-2 sm:flex-row sm:flex-wrap">
+            <div className="mt-3 flex flex-row flex-wrap gap-2">
               <a
                 href={BUSINESS.mapsUrl}
                 target="_blank"
@@ -66,7 +66,7 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="mt-10 grid grid-cols-3 gap-4 border-t border-white/10 pt-8">
+          <div className="mt-6 grid grid-cols-3 gap-4 border-t border-white/10 pt-5 sm:mt-10 sm:pt-8">
             {[
               { value: "Walk-In", label: "No appointment" },
               { value: "Local", label: "Family owned" },
@@ -81,7 +81,7 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="relative aspect-[4/5] w-full lg:aspect-auto">
+        <div className="relative aspect-[4/3] w-full lg:aspect-auto">
           <Image
             src="/shop/shop-oil-pour-bmw.webp"
             alt="Finish Line technician performing an oil change on a vehicle in the Livonia service bay"
